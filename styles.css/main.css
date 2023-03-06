@@ -141,4 +141,16 @@ NAVBAR
     font-size: 60px;
     margin-left: 0.6em;
 }
+CONTAINER
+.other{
+    box-sizing: border-box;
+    width: 100%;
+    container: other / inline-size;
+}
+
+@container other (min-width: 460px) {
+    .other-gallery {
+        grid-template-columns: repeat(2, minmax(auto, 300px));
+    }
+}
 */

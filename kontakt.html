@@ -37,24 +37,6 @@
                 <a href="#" class="btn btn-cta">Zkušební verze</a>
                 <div class="navbar__hamburger"><a class="hamburger-menu" href="javascript:void(0)">menu</a></div>
             </nav>
-            <script>
-                const hamburgerButtons = document.querySelectorAll(".hamburger-menu");
-                document.querySelector("body").onclick = (e) => {
-                    const menus = document.querySelectorAll(".hamburger-menu-list");
-                    for (const menu of menus) {
-                        menu.classList.add("navbar__menu--hidden");
-                    }
-                }
-                for (const btn of hamburgerButtons) {
-                    btn.onclick = (event) => {
-                        event.stopPropagation()
-                        const menus = document.querySelectorAll(".hamburger-menu-list");
-                        for (const menu of menus) {
-                            menu.classList.toggle("navbar__menu--hidden");
-                        }
-                    }
-                }
-            </script>
         </nav>
         <h1>Kontakt</h1>
     </header>
@@ -139,3 +121,21 @@
     </footer>
 </body>
 </html>
+    <script>
+        const hamburgerButtons = document.querySelectorAll(".hamburger-menu");
+        document.querySelector("body").onclick = (e) => {
+            const menus = document.querySelectorAll(".hamburger-menu-list");
+            for (const menu of menus) {
+                menu.classList.add("navbar__menu--hidden");
+            }
+        }
+        for (const btn of hamburgerButtons) {
+            btn.onclick = (event) => {
+                event.stopPropagation()
+                const menus = document.querySelectorAll(".hamburger-menu-list");
+                for (const menu of menus) {
+                    menu.classList.toggle("navbar__menu--hidden");
+                }
+            }
+        }
+    </script>
