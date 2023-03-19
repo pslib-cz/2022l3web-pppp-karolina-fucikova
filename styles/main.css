@@ -20,11 +20,20 @@ html{
     font-family: 'Hanken Grotesk', sans-serif;
 }
 
+
+
 .header__inline{
     display: flex;
     font-family: 'Hanken Grotesk', sans-serif;
     color: var(--Cerna);
     justify-content: space-between;
+    
+}
+
+.header__kontakt, .header__profile{
+    display: flex;
+    align-items: center;
+    align-self: center;
 }
 
 .navbar{
@@ -32,21 +41,143 @@ html{
     justify-content: space-between;
 }
 
-.navbar__logo{
+.navbar__logoipsum, .navbar__logo{
+    display: flex;
+    align-items: center;
+}
 
+.section1{
+    display: flex;
+    justify-content: space-between;
 }
 
 .orange{
     color: var(--Orange);
 }
 
+.img-responsive{
+    width: 100%;
+    object-fit: cover;
+    max-width: 700px;
+}
+
+li{
+    display: block;
+}
+
 h1, h2, h3{
     color: var(--tmavaModra)
 }
 
+.homepage__h2{
+    text-align: center;
+}
+
+.check__veci{
+    display: flex;
+    gap: 5px;
+}
+
+.sec__vyhody--up, .sec__vyhody--down{
+    display: flex;
+    justify-content: space-around;
+}
+
+.sec__vyhody--hodiny, .sec__vyhody--planeta, .sec__vyhody--sipky, .sec__vyhody--seznam{
+    text-align: center;
+}
+
+.sec__vyhody--blocs--Administrace, .sec__vyhody--blocs--Popisy, .sec__vyhody--blocs--Tvorba, .sec__vyhody--blocs--Procesy{
+    background-color: var(--Bila);
+    border-radius: 1em;
+    width: 250px;
+    margin: 10px;
+    padding: 10px;
+}
+
+.sec__vyhody--text{
+    color: var(--tmavaModra)
+}
+
+.button{
+    display: flex;
+    background-color: var(--Orange);
+    border-radius: 1em;
+    color: var(--Bila);
+    padding: 1em;
+    margin: 1em;
+    width: fit-content;
+    text-align: center;
+}
+
+.o-nas-list__item{
+    display: flex;
+    justify-content: center;
+    margin: 1em;
+    align-items: center;
+    width: 450px;
+}
+
+.o-nas__foto{
+    margin: 1em;
+}
+
+.sec__aktuality--modul, .sec__aktuality--sleva{
+    display: flex;
+    margin: 1em;
+    align-items: center;
+    justify-content: center;
+    width: 450px;
+}
+
+.aktuality__ico{
+    margin: 1em;
+}
+
+.sec__aktuality--sleva--vic{
+    text-align: right;
+}
+
+
+
+
 footer{
     background-color:  var(--tmavaModra);
     color: var(--svetlaModra);
+}
+
+.footer__items--flex{
+    display: flex;
+    justify-content: space-around;
+}
+
+.footer__item{
+    text-align: center;
+}
+
+.footer__h3{
+    color: var(--svetlaModra);
+}
+
+.footer__item--menu{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    
+}
+
+.footer__menu--text{
+    margin: 8px 0px;
+    color: var(--svetlaModra);
+}
+
+.footer__item--underline{
+    text-align: center;
+}
+
+.footer__underline--text{
+    display: flex;
+    justify-content: space-around;
 }
 
 .funkce__pozadi, .kontakt__pozadi{
