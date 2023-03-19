@@ -9,14 +9,17 @@
     <title>Funkce</title>
 </head>
 <body>
-    <header>
-        <div>
-            <a href="tel://+420 777 666 666"><p>+420 777 666 666</p></a>
-            <a href="mailto://obchod@l3web.cz"><p>obchod@l3web.cz</p></a>
+    <header class="header">
+        <div class="header__kontakt">
+            <img src="./ico/telephone.svg" alt="telefon">
+            <a href="tel://+420 777 666 666">+420 777 666 666</a>
+            <img src="./ico/email.svg" alt="schránka">
+            <a href="mailto://obchod@l3web.cz">obchod@l3web.cz</a>
         </div>
-        <a href="#"><p>Přihlášení</p></a>
+            <img src="./ico/Profile.svg" alt="profil">
+            <a href="#" class="icon-profile">Přihlášení</a>
         <nav>
-            <a href="./index.html" class="navbar__logo"><img src="/Logo5.svg" alt="logo Ipsum" width="170" height="41"></a>
+            <a href="./index.html" class="navbar__logo"><img src="./ico/Logo.svg" alt="logo Ipsum" width="170" height="41">Logo Ipsum</a>
                 <menu class="navbar__menu hamburger-menu-list navbar__menu--hidden">
                     <li class="nav-item">
                         <a class="nav-link" href="./index.html">Úvod</a>
@@ -34,27 +37,8 @@
                         <a class="nav-link" href="./kontakt.html">Kontakt</a>
                     </li>
                 </menu>
-                <a href="#" class="btn btn-cta">Zkušební verze</a>
-                <div class="navbar__hamburger"><a class="hamburger-menu" href="javascript:void(0)">menu</a></div>
-            </nav>
-            <script>
-                const hamburgerButtons = document.querySelectorAll(".hamburger-menu");
-                document.querySelector("body").onclick = (e) => {
-                    const menus = document.querySelectorAll(".hamburger-menu-list");
-                    for (const menu of menus) {
-                        menu.classList.add("navbar__menu--hidden");
-                    }
-                }
-                for (const btn of hamburgerButtons) {
-                    btn.onclick = (event) => {
-                        event.stopPropagation()
-                        const menus = document.querySelectorAll(".hamburger-menu-list");
-                        for (const menu of menus) {
-                            menu.classList.toggle("navbar__menu--hidden");
-                        }
-                    }
-                }
-            </script>
+            <a href="#" class="btn btn-cta">Zkušební verze</a>
+            <div class="navbar__hamburger"><a class="hamburger-menu" href="javascript:void(0)">menu</a></div>
         </nav>
     </header>
     <main>
@@ -177,3 +161,21 @@
     </footer>
 </body>
 </html>
+<script>
+    const hamburgerButtons = document.querySelectorAll(".hamburger-menu");
+    document.querySelector("body").onclick = (e) => {
+        const menus = document.querySelectorAll(".hamburger-menu-list");
+        for (const menu of menus) {
+            menu.classList.add("navbar__menu--hidden");
+        }
+    }
+    for (const btn of hamburgerButtons) {
+        btn.onclick = (event) => {
+            event.stopPropagation()
+            const menus = document.querySelectorAll(".hamburger-menu-list");
+            for (const menu of menus) {
+                menu.classList.toggle("navbar__menu--hidden");
+            }
+        }
+    }
+</script>

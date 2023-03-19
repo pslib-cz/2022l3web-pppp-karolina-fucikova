@@ -19,6 +19,23 @@
 html{
     font-family: 'Hanken Grotesk', sans-serif;
 }
+
+.header__inline{
+    display: flex;
+    font-family: 'Hanken Grotesk', sans-serif;
+    color: var(--Cerna);
+    justify-content: space-between;
+}
+
+.navbar{
+    display: flex;
+    justify-content: space-between;
+}
+
+.navbar__logo{
+
+}
+
 .orange{
     color: var(--Orange);
 }
