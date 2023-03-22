@@ -1,6 +1,5 @@
 
 :root{
-    --Modra: #8ECAE6;
     --tmavaModra: #16213C;
     --svetlaModra: #8ECAE6;
     --pismoModra: #2D4275;
@@ -20,6 +19,9 @@ html{
     font-family: 'Hanken Grotesk', sans-serif;
 }
 
+a {
+    text-decoration: none;
+}
 
 
 .header__inline{
@@ -48,7 +50,12 @@ html{
 
 .section1{
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
+}
+
+.section1__item--text{
+    margin: 10px;
+    padding: 10px;
 }
 
 .orange{
@@ -59,6 +66,9 @@ html{
     width: 100%;
     object-fit: cover;
     max-width: 700px;
+    margin: 20px;
+    border-radius: 32px;
+    overflow: hidden;
 }
 
 li{
@@ -71,6 +81,9 @@ h1, h2, h3{
 
 .homepage__h2{
     text-align: center;
+    padding: 20px;
+    margin: 0;
+    margin-bottom: 10px;
 }
 
 .check__veci{
@@ -105,9 +118,7 @@ h1, h2, h3{
     border-radius: 1em;
     color: var(--Bila);
     padding: 1em;
-    margin: 1em;
     width: fit-content;
-    text-align: center;
 }
 
 .o-nas-list__item{
@@ -185,7 +196,7 @@ footer{
 }
 
 .sec--modra{
-    background-color: var(--svetlaModra);
+    background-color: #8ecae688;
 }
 
 .homapage__pozadi--sediva{
