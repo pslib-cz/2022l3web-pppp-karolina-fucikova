@@ -10,36 +10,57 @@
 </head>
 <body>
     <header class="header">
-        <div class="header__kontakt">
-            <img src="./ico/telephone.svg" alt="telefon">
-            <a href="tel://+420 777 666 666">+420 777 666 666</a>
-            <img src="./ico/email.svg" alt="schránka">
-            <a href="mailto://obchod@l3web.cz">obchod@l3web.cz</a>
+        <div class="header__inline">
+            <div class="header__kontakt">
+                <a href="tel://+420 777 666 666" class="telefon">
+                    <img src="./ico/telephone.svg" alt="telefon">
+                    <p>+420 777 666 666</p>
+                </a>
+                <a href="mailto://obchod@l3web.cz" class="posta">
+                    <img src="./ico/email.svg" alt="schránka">
+                    <p>obchod@l3web.cz</p>
+                </a>
+            </div>
+                <a href="#" class="header__profile">
+                    <img src="./ico/Profile.svg" alt="profil">
+                    <p class="icon-profile">Přihlášení</p>
+                </a>
         </div>
-            <img src="./ico/Profile.svg" alt="profil">
-            <a href="#" class="icon-profile">Přihlášení</a>
-        <nav>
-            <a href="./index.html" class="navbar__logo"><img src="./ico/Logo.svg" alt="logo Ipsum" width="170" height="41">Logo Ipsum</a>
-                <menu class="navbar__menu hamburger-menu-list navbar__menu--hidden">
-                    <li class="nav-item">
-                        <a class="nav-link" href="./index.html">Úvod</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="./funkce.html">Funkce</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">Podpora</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">Ceník</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="./kontakt.html">Kontakt</a>
-                    </li>
-                </menu>
-            <a href="#" class="btn btn-cta">Zkušební verze</a>
-            <div class="navbar__hamburger"><a class="hamburger-menu" href="javascript:void(0)">menu</a></div>
-        </nav>
+        <div class="hamburger-row">
+            <div class="navbar__logoipsum">
+                <a href="./index.html" class="navbar__logo"><img src="./ico/Logo.svg" alt="logo Ipsum" ><!--width="170"-height="41"-->Logo Ipsum</a>
+            </div>
+            <a href="javascript:void(0)" class="hamburger hamburger-btn hamburger-zone">
+                <span></span>
+                <span></span>
+                <span></span>
+            </a>
+        </div>
+        <div class="navigace">
+            <nav class="navbar hamburger-nav hamburger-zone">
+                    <ul class="nav__pages">
+                        <li class="nav-item">
+                            <a class="nav-link" href="./index.html">Úvod</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="./funkce.html">Funkce</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Podpora</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Ceník</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="./kontakt.html">Kontakt</a>
+                        </li>
+                    </ul>
+                <span class="nav__border"></span>
+                <li class="nav-item btn-cta">
+                    <a href="#">Zkušební verze</a>
+                </li> 
+            </nav>
+        </div>
     </header>
     <main>
         <h1>Kontakt</h1>
@@ -80,64 +101,55 @@
         </section>
     </main>
     <footer>
-        <div>
-            <a href="./index.html" class="navbar__logo"><img src="/Logo5.svg" alt="logo Ipsum" width="170" height="41"></a>
-            <p>Pslib.cz s.r.o</p>
-            <p>Masarykova 12345</p>
-            <p>460 00 Liberec</p>
-            <div>
-                <p>+420 777 666 666</p>
-                <p>info@l3web.cz</p>
+        <div class="footer__items">
+            <div class="footer__items--flex">
+                <div class="footer__item">
+                    <a href="./index.html" class="navbar__logo footer__menu--text"><img src="./ico/Logo.svg" alt="logo Ipsum">Logo Ipsum</a>
+                    <p><b>Pslib.cz s.r.o</b></p>
+                    <p>Masarykova 12345</p>
+                    <p>460 00 Liberec</p>
+                    <div>
+                        <p>+420 777 666 666</p>
+                        <p>info@l3web.cz</p>
+                    </div>
+                </div>
+                <div class="footer__item">
+                    <h3 class="footer__h3">Videotutoriály</h3>
+                    <p>CSS</p>
+                    <p>Animace</p>
+                    <p>Stříhání videa</p>
+                    <p>Výběr barev</p>
+                    <p>Plánování pracovníků a mezd</p>
+                    <p>Všechna videa</p>
+                </div>
+            </div>
+            <div class="footer__items--flex">
+                <div class="footer__item">
+                    <h3 class="footer__h3">Podpora</h3>
+                    <p>Přihlášení k účtu</p>
+                    <p>Školení</p>
+                    <p>FAQ - časté dotazy</p>
+                    <p>Kontakty</p>
+                    <p>Videotutoriály</p>
+                </div>
+                <div class="footer__item--menu">
+                    <h3 class="footer__h3">Menu</h3>
+                    <a class="footer__menu--text" href="./index.html">Úvod</a>
+                    <a class="footer__menu--text" href="./funkce.html">Funkce</a>
+                    <a class="footer__menu--text" href="#">Podpora</a>
+                    <a class="footer__menu--text" href="#">Ceník</a>
+                    <a class="footer__menu--text" href="./kontakt.html">Kontakt</a>
+                </div>
             </div>
         </div>
-        <div>
-            <p>Videotutoriály</p>
-            <p>CSS</p>
-            <p>Animace</p>
-            <p>Stříhání videa</p>
-            <p>Výběr barev</p>
-            <p>Plánování pracovníků a mezd</p>
-            <p>Všechna videa</p>
+        <div class="footer__item--underline">
+            <div class="footer__underline--text">
+                <p>&copy; Copyright 2023 - Pslib.cz s.r.o</p> 
+                <p>Cookies</p>
+                <p>Podmínky užití</p>
+            </div>
+            <p>Vyrobilo: B interactive</p>
         </div>
-        <div>
-            <p>Podpora</p>
-            <p>Přihlášení k účtu</p>
-            <p>Školení</p>
-            <p>FAQ - časté dotazy</p>
-            <p>Kontakty</p>
-            <p>Videotutoriály</p>
-        </div>
-        <div>
-            <a href="">Úvod</a>
-            <a href="">Funkce</a>
-            <a href="">Podpora</a>
-            <a href="">Ceník</a>
-            <a href="">Kontakt</a>
-        </div>
-        <div>
-            <p>&copy; Copyright 2023 - Pslib.cz s.r.o</p> 
-            <p>Cookies</p>
-            <p>Podmínky užití</p>
-        </div>
-        <p>Vyrobilo: B interactive</p>
     </footer>
 </body>
 </html>
-    <script>
-        const hamburgerButtons = document.querySelectorAll(".hamburger-menu");
-        document.querySelector("body").onclick = (e) => {
-            const menus = document.querySelectorAll(".hamburger-menu-list");
-            for (const menu of menus) {
-                menu.classList.add("navbar__menu--hidden");
-            }
-        }
-        for (const btn of hamburgerButtons) {
-            btn.onclick = (event) => {
-                event.stopPropagation()
-                const menus = document.querySelectorAll(".hamburger-menu-list");
-                for (const menu of menus) {
-                    menu.classList.toggle("navbar__menu--hidden");
-                }
-            }
-        }
-    </script>

@@ -6,60 +6,82 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./styles/main.css">
     <link rel="stylesheet" href="./styles/normalize.css">
+    <link rel="stylesheet" href="./styles/hamburger.css">
+    <link rel="stylesheet" href="./styles/style.css">
+    <script src="./hamburger.js"></script>
     <title>Homepage</title>
 </head>
 <body>
     <header class="header">
         <div class="header__inline">
             <div class="header__kontakt">
-                <img src="./ico/telephone.svg" alt="telefon">
-                <a href="tel://+420 777 666 666">+420 777 666 666</a>
-                <img src="./ico/email.svg" alt="schránka">
-                <a href="mailto://obchod@l3web.cz">obchod@l3web.cz</a>
+                <a href="tel://+420 777 666 666" class="telefon">
+                    <img src="./ico/telephone.svg" alt="telefon">
+                    <p>+420 777 666 666</p>
+                </a>
+                <a href="mailto://obchod@l3web.cz" class="posta">
+                    <img src="./ico/email.svg" alt="schránka">
+                    <p>obchod@l3web.cz</p>
+                </a>
             </div>
-            <div class="header__profile">
-                <img src="./ico/Profile.svg" alt="profil">
-                <a href="#" class="icon-profile">Přihlášení</a>
-            </div>
+                <a href="#" class="header__profile">
+                    <img src="./ico/Profile.svg" alt="profil">
+                    <p class="icon-profile">Přihlášení</p>
+                </a>
         </div>
-        <nav class="navbar">
+        <div class="hamburger-row">
             <div class="navbar__logoipsum">
                 <a href="./index.html" class="navbar__logo"><img src="./ico/Logo.svg" alt="logo Ipsum" ><!--width="170"-height="41"-->Logo Ipsum</a>
             </div>
-                <menu class="navbar__menu hamburger-menu-list navbar__menu--hidden">
-                    <li class="nav-item">
-                        <a class="nav-link" href="./index.html">Úvod</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="./funkce.html">Funkce</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">Podpora</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">Ceník</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="./kontakt.html">Kontakt</a>
-                    </li>
-                </menu>
-            <a href="#" class="btn btn-cta">Zkušební verze</a>
-            <div class="navbar__hamburger"><a class="hamburger-menu" href="javascript:void(0)">menu</a></div>
-        </nav>
+            <a href="javascript:void(0)" class="hamburger hamburger-btn hamburger-zone">
+                <span></span>
+                <span></span>
+                <span></span>
+            </a>
+        </div>
+        <div class="navigace">
+            <nav class="navbar hamburger-nav hamburger-zone">
+                    <ul class="nav__pages">
+                        <li class="nav-item">
+                            <a class="nav-link" href="./index.html">Úvod</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="./funkce.html">Funkce</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Podpora</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Ceník</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="./kontakt.html">Kontakt</a>
+                        </li>
+                    </ul>
+                <span class="nav__border"></span>
+                <li class="nav-item btn-cta">
+                    <a href="#">Zkušební verze</a>
+                </li> 
+            </nav>
+        </div>
     </header>
     <main>
         <section class="section1">
-            <di class="section1__item--text">
+            <div class="sec1__h1">
+                <img class="img-responsive" src="./images/school.jpg" alt="škola">
                 <h1><span class="orange">Řízení školy</span > ještě nebylo jednodušší</h1>
-                <p>Představujeme Software pro řízení lidských zdrojů ve škole nebylo efektivnější.</p>
-                <ul>
-                    <div class="check__veci"><img src="./ico/check.svg" alt="hotovo"><li>Počítá mzdové náklady</li></div>
-                    <div class="check__veci"><img src="./ico/check.svg" alt="hotovo"><li>Generuje lidi</li></div>
-                    <div class="check__veci"><img src="./ico/check.svg" alt="hotovo"><li>Tvoří budoucnost</li></div>
-                </ul>
-                <a href="#" class="button" href="#">Vyzkoušejte demo</a>
-            </di >
-            <img class="img-responsive" src="./images/school.jpg" alt="škola">
+            </div >
+            <div class="section1__item--text">
+                <p>Představujeme Software pro <b>řízení lidských zdrojů ve škole nebylo efektivnější.</b></p>
+                <div class="sec1__btn">
+                    <ul>
+                        <div class="check__veci"><img src="./ico/check.svg" alt="hotovo"><li>Počítá mzdové náklady</li></div>
+                        <div class="check__veci"><img src="./ico/check.svg" alt="hotovo"><li>Generuje lidi</li></div>
+                        <div class="check__veci"><img src="./ico/check.svg" alt="hotovo"><li>Tvoří budoucnost</li></div>
+                    </ul>
+                    <a href="#" class="button" href="#">Vyzkoušejte demo</a>
+                </div>
+            </div>
         </section>
         <section class="sec--modra width">
             <div class="sec__vyhody">
@@ -102,8 +124,8 @@
                         <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Nulla quis diam. Vivamus luctus egesta.</p>
                     </div>
                 </div>
-                <a href="#" class="button">Prozkoumat všechny funkce</a>
             </div>
+            <a href="#" class="button sec_vyhody--btn">Prozkoumat všechny funkce</a>
         </section>
         <section>
             <h2 class="homepage__h2">Příběh</h2>
@@ -228,21 +250,3 @@
     </footer>
 </body>
 </html>
-        <script>
-                const hamburgerButtons = document.querySelectorAll(".hamburger-menu");
-                document.querySelector("body").onclick = (e) => {
-                    const menus = document.querySelectorAll(".hamburger-menu-list");
-                    for (const menu of menus) {
-                        menu.classList.add("navbar__menu--hidden");
-                    }
-                }
-                for (const btn of hamburgerButtons) {
-                    btn.onclick = (event) => {
-                        event.stopPropagation()
-                        const menus = document.querySelectorAll(".hamburger-menu-list");
-                        for (const menu of menus) {
-                            menu.classList.toggle("navbar__menu--hidden");
-                        }
-                    }
-                }
-            </script>
