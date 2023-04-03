@@ -1,0 +1,309 @@
+
+:root{
+    --tmavaModra: #16213C;
+    --svetlaModra: #8ECAE6;
+    --pismoModra: #2D4275;
+    --Orange: #F5841F;
+    --tmavaOrange: #ED834E;
+    --svetlaOrange: #FF7917;
+    --Hneda: #340E0E;
+    --Cerna: #000000;
+    --Bila: #FFFFFF;
+    --Seda: #D9D9D9;
+    --svetlaSeda: #EFEFEF;
+    --Sediva: #E7E7E7;
+    --svetlaSediva: #F5F5F5;
+}
+
+html{
+    font-family: 'Hanken Grotesk', sans-serif;
+}
+
+a {
+    text-decoration: none;
+}
+
+.orange{
+    color: var(--Orange);
+}
+
+li{
+    display: block;
+}
+
+h1, h2, h3{
+    color: var(--tmavaModra)
+}
+
+.img-responsive{
+    width: 100%;
+    object-fit: cover;
+    max-width: 700px;
+    margin: 10px;
+    border-radius: 32px;
+    overflow: hidden;
+}
+
+.button{
+    display: flex;
+    background-color: var(--Orange);
+    border-radius: 1em;
+    color: var(--Bila);
+    padding: 1em;
+    /*width: fit-content;*/
+    text-align: center;
+}
+
+.button:hover {
+    border-radius: 1em;
+    border: 5px solid var(--Orange);
+    background-color: var(--Bila);
+    color: var(--Orange);
+    font-weight: bold;
+    padding: 0.7em;
+}
+
+/*HEADER*/
+
+.header{
+    margin: 10px;
+}
+
+.header__inline{
+    display: flex;
+    font-family: 'Hanken Grotesk', sans-serif;
+    justify-content: space-between;
+}
+
+.header__kontakt{
+    gap: 10px;
+}
+
+.header__inline p {
+    visibility: hidden;
+}
+
+.telefon, .posta, .header__profile, .header__kontakt{
+    display: flex;
+    align-items: center;
+    align-self: center;
+}
+
+/*NAVIGACE*/
+
+.navbar__logo{
+    width: 185px;
+    color: var(--Hneda);
+    font-size: 28px;
+    font-weight: bold;
+    flex-wrap: nowrap;
+}
+
+.nav-link{
+    color: var(--Cerna);
+    font-size: 22px;
+    font-weight: bold;
+    text-align: center;
+}
+
+.navbar__logoipsum, .navbar__logo{
+    display: flex;
+    align-items: center;
+}
+
+.telefon, .posta, .header__profile{
+    gap: 5px;
+    color: var(--Cerna);
+    font-weight: bold;
+}
+
+/*HOMEPAGE*/
+
+.sec1__btn{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.section1{
+    display: flex;
+    justify-content: space-around;
+    flex-direction: column;
+    margin: 10px;
+}
+
+.sec1__h1{
+    display: flex;
+    flex-direction: row-reverse;
+}
+
+.section1__item--text{
+    margin: 10px;
+    padding: 10px;
+}
+
+.homepage__h2{
+    text-align: center;
+    padding: 20px;
+    margin: 0;
+    margin-bottom: 10px;
+}
+
+.check__veci{
+    display: flex;
+    gap: 5px;
+}
+
+.sec__vyhody--up, .sec__vyhody--down{
+    display: flex;
+    justify-content: space-around;
+}
+
+.sec__vyhody--hodiny, .sec__vyhody--planeta, .sec__vyhody--sipky, .sec__vyhody--seznam{
+    text-align: center;
+}
+
+.sec__vyhody--blocs--Administrace, .sec__vyhody--blocs--Popisy, .sec__vyhody--blocs--Tvorba, .sec__vyhody--blocs--Procesy{
+    background-color: var(--Bila);
+    border-radius: 1em;
+    width: 250px;
+    margin: 10px;
+    padding: 10px;
+}
+
+.sec__vyhody--text{
+    color: var(--tmavaModra)
+}
+
+.o-nas-list__item{
+    display: flex;
+    justify-content: center;
+    margin: 1em;
+    align-items: center;
+    width: 450px;
+}
+
+.o-nas__foto{
+    margin: 1em;
+}
+
+.sec__aktuality{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.sec__aktuality--modul, .sec__aktuality--sleva{
+    position: relative;
+    justify-content: center;
+    display: flex;
+    margin: 1em;
+    align-items: center;
+    width: 450px;
+}
+
+.aktuality__ico{
+    margin: 1em;
+}
+
+.sec__aktuality--sleva--vic{
+    text-align: right;
+}
+
+.homapage__pozadi--sediva{
+    background-color: var(--svetlaSediva);
+}
+
+.sec--modra{
+    background-color: #8ecae688;
+    padding: 20px;
+}
+
+.sec_vyhody--btn{
+    justify-content: center;
+    width: 100px;
+}
+
+/*FOOTER*/
+
+footer{
+    background-color:  var(--tmavaModra);
+    color: var(--svetlaModra);
+}
+
+.footer__items--flex{
+    display: flex;
+    justify-content: space-around;
+}
+
+.footer__item{
+    text-align: center;
+}
+
+.footer__h3{
+    color: var(--svetlaModra);
+}
+
+.footer__item--menu{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    
+}
+
+.footer__menu--text{
+    margin: 8px 0px;
+    color: var(--svetlaModra);
+}
+
+.footer__item--underline{
+    text-align: center;
+}
+
+.footer__underline--text{
+    display: flex;
+    justify-content: space-around;
+}
+
+/*FUNKCE*/
+
+.funkce__pozadi, .kontakt__pozadi{
+    background-color: var(--Sediva);
+}
+
+/*MEDIAQ*/
+
+@media screen and (min-width: 640px){
+    .header__inline p {
+        visibility: visible;
+    }
+
+    .section1{
+        flex-wrap: nowrap;
+        flex-direction: column;
+    }
+    .navbar{
+        display: flex;
+        width: 600px;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .nav__pages{
+        display: flex;
+        min-width: 400px;
+        justify-content: space-between;
+    }
+
+    .nav__border{
+        border: 1px solid  var(--Seda);
+        align-self: center;
+        height: 2em;
+    }
+    .navigace{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        margin: 10px;
+    }
+}
