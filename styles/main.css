@@ -50,7 +50,7 @@ h1, h2, h3{
     border-radius: 1em;
     color: var(--Bila);
     padding: 1em;
-    /*width: fit-content;*/
+    width: fit-content;
     text-align: center;
     justify-content: center;
 }
@@ -162,6 +162,10 @@ h1, h2, h3{
     border-top: 2px solid var(--tmavaModra);
     border-bottom: 0.5px solid var(--tmavaModra);
 }
+.navbar{
+    position: absolute;
+    width: 100%;
+}
 /*HOMEPAGE*/
 
 .sec1__btn{
@@ -261,6 +265,7 @@ h1, h2, h3{
 }
 
 .sec_vyhody--btn{
+    display: flex;
     justify-content: center;
     width: 100px;
 }
@@ -406,7 +411,7 @@ footer{
     }
     .navbar{
         display: flex;
-        width: 600px;
+        /*min-width: 600px;*/
         justify-content: space-between;
         align-items: center;
     }
@@ -415,6 +420,7 @@ footer{
         display: flex;
         min-width: 400px;
         justify-content: space-between;
+        /*position: relative;*/
     }
 
     .nav__border{
