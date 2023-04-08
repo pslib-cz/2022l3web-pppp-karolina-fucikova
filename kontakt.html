@@ -6,13 +6,16 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./styles/main.css">
     <link rel="stylesheet" href="./styles/normalize.css">
+    <link rel="stylesheet" href="./styles/hamburger.css">
+    <link rel="stylesheet" href="./styles/style.css">
+    <script src="./hamburger.js"></script>
     <title>Kontakt</title>
 </head>
 <body>
     <header class="header">
         <div class="header__inline">
             <div class="header__kontakt">
-                <a href="tel://+420 777 666 666" class="telefon">
+                <a href="tel://+420777666666" class="telefon">
                     <img src="./ico/telephone.svg" alt="telefon">
                     <p>+420 777 666 666</p>
                 </a>
@@ -63,8 +66,15 @@
         </div>
     </header>
     <main>
-        <h1>Kontakt</h1>
-        <section>
+        <section class="kontakt__sec1">
+            <h1>Kontakt</h1>
+            <div class="drobenka">
+                <a href="./index.html">Úvod</a>
+                <span class="drobenka__span"></span>
+                <a href="./funkce.html">Kontakt</a>
+            </div>
+        </section>
+        <section class="kontakt__sec2">
             <div>
                 <h3>Úřední hodiny:</h3>
                 <p>PO - ČT: 7:30 - 15:00 hodin</p>
@@ -79,24 +89,37 @@
                 <p>IČO: 46747991</p>
             </div>
         </section>
-        <section class="kontakt__pozadi">
-            <div>
-                <p>Michaela Komorousová</p>
-                <p>Personalista</p>
-                <p>E-mail: mKom@logoipsum.com</p>
-                <p>Tel: +420 487 989 612</p>
+        <img src="https://goo.gl/maps/qyEoKppufyGWZZqq7" alt="Mapa" class="mapa">
+        <section class="kontakt__sec3 kontakt__pozadi">
+            <div class="kontakt__personal">
+                <div class="foto__profil">
+                    <img src="./images/profil-michaela.svg" alt="Evropanka">
+                </div>
+                <div class="kontakt__personal--text">
+                    <p>Michaela Komorousová</p>
+                    <p>Personalista</p>
+                    <p>E-mail: mKom@logoipsum.com</p>
+                    <p>Tel: +420 487 989 612</p>
+                </div>
             </div>
-            <div>
-                <p>Anna Suchánková</p>
-                <p>Personalista, Magna Exteriors s.r.o.</p>
-                <p>Email: aSuch@logoipsum.com</p>
-                <p>Tel: +420 487 989 618</p>
+            <div class="kontakt__personal">
+                <div class="foto__profil">
+                    <img src="./images/profil-anna.svg" alt="Asiatka">
+                </div>
+                <div class="kontakt__personal--text">
+                    <p>Anna Suchánková</p>
+                    <p>Personalista, Magna Exteriors s.r.o.</p>
+                    <p>Email: aSuch@logoipsum.com</p>
+                    <p>Tel: +420 487 989 618</p>
+                </div>
             </div>
-            <div>
-                <img src="/Logo5.svg" alt="Logo">
-                <p>Informace</p>
-                <p>E-mail: info@logoipsum.com</p>
-                <p>Pokud se chcete na něco zeptat...</p>
+            <div class="kontakt__personal">
+                <img src="./ico/Logo.svg" alt="Logo" class="foto__logo">
+                <div class="kontakt__personal--text">
+                    <p>Informace</p>
+                    <p>E-mail: info@logoipsum.com</p>
+                    <p>Pokud se chcete na něco zeptat...</p>
+                </div>
             </div>
         </section>
     </main>

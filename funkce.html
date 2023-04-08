@@ -6,13 +6,16 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./styles/main.css">
     <link rel="stylesheet" href="./styles/normalize.css">
+    <link rel="stylesheet" href="./styles/hamburger.css">
+    <link rel="stylesheet" href="./styles/style.css">
+    <script src="./hamburger.js"></script>
     <title>Funkce</title>
 </head>
 <body>
     <header class="header">
         <div class="header__inline">
             <div class="header__kontakt">
-                <a href="tel://+420 777 666 666" class="telefon">
+                <a href="tel://+420777666666" class="telefon">
                     <img src="./ico/telephone.svg" alt="telefon">
                     <p>+420 777 666 666</p>
                 </a>
@@ -63,79 +66,82 @@
         </div>
     </header>
     <main>
-        <section>
+        <section class="funkce__sec1">
             <h1>Funkce</h1>
-            <div>
+            <div class="drobenka">
                 <a href="./index.html">Úvod</a>
+                <span class="drobenka__span"></span>
                 <a href="./funkce.html">Funkce</a>
             </div>
-        <p>Seznam funkcí aplikace</p>
-        <p>
-            Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur.
-        </p>
-        <a href="#" class="Play"><img src="./ico/Play.svg" alt="Play">Videotutoriály</a>
+            <div class="funkce__uvod">
+                <div class="funkce__uvod--text">
+                    <h2>Seznam funkcí aplikace</h2>
+                    <p>
+                        Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur.
+                    </p>
+                </div>
+                <a href="#" class="Play"><img src="./ico/Play.svg" alt="Play">Videotutoriály</a>
+            </div>
         </section>
-        <section class="funkce__pozadi">
-            <a><!--grid-->
+        <section class="funkce__grid funkce__pozadi">
+            <a class="procesy__item"><!--grid-->
                 <h3>Administrace aplikace</h3>
                 <p>Integer malesuada. Nullam faucibus mi quis velit. Fusce consectetuer risus a nunc. Nam...</p>
             </a>
-            <a>
+            <a class="procesy__item">
                 <h3 class="orange">Firemní procesy</h3>
                 <p>Integer malesuada. Nullam faucibus mi quis velit. Fusce consectetuer risus a nunc. Nam...</p>
             </a>
-            <a>
+            <a class="procesy__item">
                 <h3 class="orange">Firemní procesy</h3>
                 <p>Integer malesuada. Nullam faucibus mi quis velit. Fusce consectetuer risus a nunc. Nam...</p>
             </a>
-            <a>
+            <a class="procesy__item">
                 <h3 class="orange">Firemní procesy</h3>
                 <p><b>Integer malesuada. Nullam faucibus mi quis velit. Fusce consectetuer risus a nunc. Nam...</b></p>
             </a>
-            <a>
+            <a class="procesy__item">
                 <h3 class="orange">Firemní procesy</h3>
                 <p><b>Integer malesuada. Nullam faucibus mi quis velit. Fusce consectetuer risus a nunc. Nam...</b></p>
             </a>
-            <a>
+            <a class="procesy__item">
                 <h3 class="orange">Firemní procesy</h3>
                 <p>Integer malesuada. Nullam faucibus mi quis velit. Fusce consectetuer risus a nunc. Nam...</p>
             </a>
-            <a>
+            <a class="procesy__item">
                 <h3 class="orange">Firemní procesy</h3>
                 <p>Integer malesuada. Nullam faucibus mi quis velit. Fusce consectetuer risus a nunc. Nam...</p>
             </a>
-            <a>
+            <a class="procesy__item">
                 <h3 class="orange">Firemní procesy</h3>
                 <p>Integer malesuada. Nullam faucibus mi quis velit. Fusce consectetuer risus a nunc. Nam...</p>
             </a>
-            <a>
+            <a class="procesy__item">
                 <h3 class="orange">Firemní procesy</h3>
                 <p>Integer malesuada. Nullam faucibus mi quis velit. Fusce consectetuer risus a nunc. Nam...</p>
             </a>
-            <a>
+            <a class="procesy__item">
                 <h3 class="orange">Firemní procesy</h3>
                 <p>Integer malesuada. Nullam faucibus mi quis velit. Fusce consectetuer risus a nunc. Nam...</p>
             </a>
-            <a>
+            <a class="procesy__item">
                 <h3 class="orange">Firemní procesy</h3>
                 <p>Integer malesuada. Nullam faucibus mi quis velit. Fusce consectetuer risus a nunc. Nam...</p>
             </a>
-            <a>
+            <a class="procesy__item">
                 <h3 class="orange">Firemní procesy</h3>
                 <p>Integer malesuada. Nullam faucibus mi quis velit. Fusce consectetuer risus a nunc. Nam...</p>
             </a>
         </section>
-        <section>
-            <h2>Máte dotaz <span class="orange">k chování aplikace?</span></h2>
+        <section class="funkce__dotazy">
+            <h2>
+                Máte dotaz <span class="orange">k chování aplikace?</span>
+            </h2>
             <p>Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur</p>
-            <p>podpora@l3web.cz</p>
-            <div class="button">
-                <a href="./kontakt.html">Napište nám email?</a>
-            </div>
+            <p><b>podpora@l3web.cz</b></p>
+            <a href="./kontakt.html" class="button funkce-btn">Napište nám email?</a>
             <p>nebo</p>
-            <div>
-                <a href="./kontakt.html">Zavolejte nám</a>
-            </div>
+            <a href="./kontakt.html" class="button funkce-btn">Zavolejte nám</a>
         </section>
     </main>
     <footer>
