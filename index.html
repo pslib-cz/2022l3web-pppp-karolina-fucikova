@@ -29,18 +29,19 @@
                     <p class="icon-profile">Přihlášení</p>
                 </a>
         </div>
-        <div class="hamburger-row">
-            <div class="navbar__logoipsum">
-                <a href="./index.html" class="navbar__logo"><img src="./ico/Logo.svg" alt="logo Ipsum" ><!--width="170"-height="41"-->Logo Ipsum</a>
+        <div class="header__navigace">
+            <div class="hamburger-row">
+                <div class="navbar__logoipsum">
+                    <a href="./index.html" class="navbar__logo"><img src="./ico/Logo.svg" alt="logo Ipsum" ><!--width="170"-height="41"-->Logo Ipsum</a>
+                </div>
+                <a href="javascript:void(0)" class="hamburger hamburger-btn hamburger-zone">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </a>
             </div>
-            <a href="javascript:void(0)" class="hamburger hamburger-btn hamburger-zone">
-                <span></span>
-                <span></span>
-                <span></span>
-            </a>
-        </div>
-        <div class="navigace">
-            <nav class="navbar hamburger-nav hamburger-zone">
+            <div class="navigace">
+                <nav class="navbar hamburger-nav hamburger-zone">
                     <ul class="nav__pages">
                         <li class="nav-item">
                             <a class="nav-link" href="./index.html">Úvod</a>
@@ -54,192 +55,222 @@
                         <li class="nav-item">
                             <a class="nav-link" href="#">Ceník</a>
                         </li>
-                        <li class="nav-item nav-span">
+                        <li class="nav-item">
                             <a class="nav-link" href="./kontakt.html">Kontakt</a>
                         </li>
-            </nav>
+                        <li class="nav__border"></li>
+                        <li class="nav-item btn-cta">
+                            <a href="#">Zkušební verze</a>
+                        </li> 
+                    </ul>
+                </nav>
+            </div>
         </div>
     </header>
     <main>
         <section class="section1">
-            <div class="sec1__h1">
-                <img class="img-responsive" src="./images/school.jpg" alt="škola">
+            <div class="sec1__check--block">
                 <h1><span class="orange">Řízení školy</span > ještě nebylo jednodušší</h1>
-            </div >
-            <div class="section1__item--text">
-                <p>Představujeme Software pro <b>řízení lidských zdrojů ve škole nebylo efektivnější.</b></p>
-                <div class="sec1__btn">
-                        <ul class="check__veci">
-                            <img  src="./ico/check.svg" alt="hotovo" ><li>Počítá mzdové náklady</li>
-                            <img  src="./ico/check.svg" alt="hotovo"><li>Generuje lidi</li>
-                            <img  src="./ico/check.svg" alt="hotovo"><li>Tvoří budoucnost</li>
-                        </ul>
-                    <a href="#" class="button">Vyzkoušejte demo</a>
+                <div class="section1__item--text">
+                    <p>Představujeme Software pro <b>řízení lidských zdrojů ve škole nebylo efektivnější.</b></p>
+                    <div class="sec1__check">
+                                <div class="sec1__check--text">
+                                    <div class="check__veci"><img  src="./ico/check.svg" alt="hotovo"><ul><li>Počítá mzdové náklady</li></ul></div>
+                                    <div class="check__veci"><img  src="./ico/check.svg" alt="hotovo"><ul><li>Generuje lidi</li></ul></div>
+                                    <div class="check__veci"><img  src="./ico/check.svg" alt="hotovo"><ul><li>Tvoří budoucnost</li></ul></div>
+                                </div>
+                        <a href="#" class="button">Vyzkoušejte demo</a>
+                    </div>
                 </div>
             </div>
+            <img class="img-responsive" src="./images/school.jpg" alt="škola">
         </section>
         <section class="sec--modra width">
+            <h2 class="homepage__h2">Výhody řešení</h2>
             <div class="sec__vyhody">
-                <h2 class="homepage__h2">Výhody řešení</h2>
-                <div class="sec__vyhody--up">
-                    <div class="sec__vyhody--hodiny">
-                        <img src="./images/hodiny.svg" alt="ikona_hodiny"><p class="sec__vyhody--text"><span class="orange"><b>Zkracuje čas práce</b></span><b> díky velkému množství funkcí.</b></p>
-                    </div>
-                    <div class="sec__vyhody--planeta">
-                        <img src="./images/planeta.svg" alt="ikona_planeta"><p class="sec__vyhody--text"><b>Poskytuje selektivní přístup všem pracovníkům</b></p>
-                    </div>
+                <div class="sec__vyhody--hodiny vyhody__item">
+                    <img src="./images/hodiny.svg" alt="ikona_hodiny"><p class="sec__vyhody--text"><span class="orange"><b>Zkracuje čas práce</b></span><b> díky velkému množství funkcí.</b></p>
                 </div>
-                <div class="sec__vyhody--down">
-                    <div class="sec__vyhody--sipky">
-                        <img src="./images/sipky.svg" alt="ikona_sipky"><p class="sec__vyhody--text"><b>Umožňuje outsourcing personalistických procesů</b></p>
-                    </div>
-                    <div class="sec__vyhody--seznam">
-                        <img src="./images/seznam.svg" alt="ikona_seznam"><p class="sec__vyhody--text"><b>Zaručuje splnění požadavků ISO a IATF</b></p>
-                    </div>
+                <div class="sec__vyhody--planeta vyhody__item">
+                    <img src="./images/planeta.svg" alt="ikona_planeta"><p class="sec__vyhody--text"><b>Poskytuje selektivní přístup všem pracovníkům</b></p>
                 </div>
+                <div class="sec__vyhody--sipky vyhody__item">
+                    <img src="./images/sipky.svg" alt="ikona_sipky"><p class="sec__vyhody--text"><b>Umožňuje outsourcing personalistických procesů</b></p>
+                </div>
+                <div class="sec__vyhody--seznam vyhody__item">
+                    <img src="./images/seznam.svg" alt="ikona_seznam"><p class="sec__vyhody--text"><b>Zaručuje splnění požadavků ISO a IATF</b></p>
+                </div>
+            </div>
+            <div class="sec__vyhody--line">
+                <span class="vyhody__line"></span>
             </div>
             <div class="sec__vyhody--blocs">
-                <div class="sec__vyhody--up">
-                    <div class="sec__vyhody--blocs--Administrace">
-                        <h3>Administrace aplikace</h3>
-                        <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Nulla quis diam. Vivamus luctus egesta.</p>
-                    </div>
-                    <div class="sec__vyhody--blocs--Popisy">
-                        <h3>Popisy pracovních míst</h3>
-                        <p>Nullam rhoncus aliquam metus. Aliquam ornare wisi eu metus. Nulla quis diam. Maecenas libero.</p>
-                    </div>
+                <div class="sec__vyhody--blocs--Administrace">
+                    <h3>Administrace aplikace</h3>
+                    <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Nulla quis diam. Vivamus luctus egesta.</p>
                 </div>
-                <div class="sec__vyhody--down">
-                    <div class="sec__vyhody--blocs--Tvorba">
-                        <h3>Tvorba organizační struktury</h3>
-                        <p>Vestibulum fermentum tortor id mi. Duis viverra diam non justo. Vivamus ac leo pretium faucibus.</p>
-                    </div>
-                    <div class="sec__vyhody--blocs--Procesy">
-                        <h3>Firemní procesy</h3>
-                        <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Nulla quis diam. Vivamus luctus egesta.</p>
-                    </div>
+                <div class="sec__vyhody--blocs--Popisy">
+                    <h3>Popisy pracovních míst</h3>
+                    <p>Nullam rhoncus aliquam metus. Aliquam ornare wisi eu metus. Nulla quis diam. Maecenas libero.</p>
+                </div>
+                <div class="sec__vyhody--blocs--Tvorba">
+                    <h3>Tvorba organizační struktury</h3>
+                    <p>Vestibulum fermentum tortor id mi. Duis viverra diam non justo. Vivamus ac leo pretium faucibus.</p>
+                </div>
+                <div class="sec__vyhody--blocs--Procesy">
+                    <h3>Firemní procesy</h3>
+                    <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Nulla quis diam. Vivamus luctus egesta.</p>
                 </div>
             </div>
-            <div class="button sec_vyhody--btn">
-                <a href="#" class="">Prozkoumat všechny funkce</a>
+            <div class="sec__btn">
+                <a href="#" class="button">Prozkoumat všechny funkce</a>
             </div>
         </section>
-        <section>
+        <section class="sec__pribeh">
             <h2 class="homepage__h2">Příběh</h2>
-            <p>Jsme dva - Honza a Tomáš</p>
-            <p>
-                Praesent ultricies lacus in ligula volutpat feugiat. In hac habitasse platea dictumst. In hac habitasse platea dictumst. 
-                Fusce luctus justo eget nisi hendrerit, quis aliquam arcu.
-            </p>
-            <a href="#" class="button">Přečíst celý příběh</a>
-            <img class="img-responsive" src="./images/books.jpg" alt="knihy">
+            <div class="pribeh__block">
+                <div class="pribeh__item">
+                    <div class="sec__pribeh--text">
+                        <h3>Jsme dva - Honza a Tomáš</h3>
+                        <p>
+                            Praesent ultricies lacus in ligula volutpat feugiat. In hac habitasse platea dictumst. In hac habitasse platea dictumst. 
+                            Fusce luctus justo eget nisi hendrerit, quis aliquam arcu.
+                        </p>
+                    </div>
+                    <div>
+                        <a href="#" class="button">Přečíst celý příběh</a>
+                    </div>
+                </div>
+                <div class="pribeh__knihy">
+                    <img class="img-responsive" src="./images/books.jpg" alt="knihy">
+                </div>
+            </div>
         </section>
         <section class="o-nas">
             <h2 class="homepage__h2">Napsali o nás</h2>
-            <div class="o-nas o-nas-list__item">
-                <div class="foto__profil">
-                    <img src="./images/profil-michaela.svg" alt="Evropanka">
+            <div class="o-nas__block">
+                <div class="o-nas__list">
+                    <div class="o-nas-list__item">
+                        <div class="foto__profil">
+                            <img src="./images/profil-michaela.svg" alt="Evropanka">
+                        </div>
+                        <div class="o-nas__text">
+                            <p>
+                                Lorem ipsum in the good ol days. We are just getting started. We are on the ground floor. Success feeds.
+                            </p>
+                            <p><b>Michaela Komorousová</b></p>
+                            <p>Personalista, Magna Exteriors s.r.o.</p>
+                        </div>
+                    </div>
                 </div>
-                <div class="o-nas__text">
-                    <p>
-                        Lorem ipsum in the good ol days. We are just getting started. We are on the ground floor. Success feeds.
-                    </p>
-                    <p><b>Michaela Komorousová</b></p>
-                    <p>Personalista, Magna Exteriors s.r.o.</p>
+                <div class="o-nas__list">
+                    <div class="o-nas-list__item">
+                        <div class="foto__profil">
+                            <img src="./images/profil-alzbeta.svg" alt="Černoška">
+                        </div>
+                        <div class="o-nas__text">
+                            <p>
+                                Lorem ipsum in the good ol days. We are just getting started. We are ...
+                            </p>
+                            <p><b>Alžběta Formánková</b></p>
+                            <p>Personalista, Magna Exteriors s.r.o.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="o-nas__list">
+                    <div class="o-nas-list__item">
+                        <div class="foto__profil">
+                            <img src="./images/profil-anna.svg" alt="Asiatka">
+                        </div>
+                        <div class="o-nas__text">
+                            <p>
+                                Lorem ipsum in the good ol days. We are just getting started. We are ...
+                            </p>
+                            <p><b>Anna Suchánková</b></p>
+                            <p>Personalista, Magna Exteriors s.r.o.</p>
+                        </div>
+                    </div>
                 </div>
             </div>
-            <div class="o-nas o-nas-list__item">
-                <div class="foto__profil">
-                    <img src="./images/profil-alzbeta.svg" alt="Černoška">
-                </div>
-                <div class="o-nas__text">
-                    <p>
-                        Lorem ipsum in the good ol days. We are just getting started. We are ...
-                    </p>
-                    <p><b>Alžběta Formánková</b></p>
-                    <p>Personalista, Magna Exteriors s.r.o.</p>
-                </div>
+            <div class="sec__btn">
+                <a href="#" class="button">Chci si přečíst víc</a>
             </div>
-            <div class="o-nas o-nas-list__item">
-                <div class="foto__profil">
-                    <img src="./images/profil-anna.svg" alt="Asiatka">
-                </div>
-                <div class="o-nas__text">
-                    <p>
-                        Lorem ipsum in the good ol days. We are just getting started. We are ...
-                    </p>
-                    <p><b>Anna Suchánková</b></p>
-                    <p>Personalista, Magna Exteriors s.r.o.</p>
-                </div>
-            </div>
-            <a href="#" class="button">Chci si přečíst víc</a>
         </section>
         <section class="sec__aktuality homapage__pozadi--sediva">
             <h2 class="homepage__h2">Aktuality</h2>
-            <div class="sec__aktuality--modul">
-                <div class="aktuality__ico"><img src="./ico/bubble21.svg" alt="datum-21."></div>
-                <div class="sec__aktuality--modul--text">
-                    <p><b>Přidán nový modul do administrace</b></p>
-                    <p>Lorem ipsum dolor sia nostra, per inceptos hymenaeos. Nulla turpis magna, cursus sit amet, suscipit a, interdum id, felis.</p>
-                    <a href="#"><span class="orange">Přečíst celý článek</span ></a>
+            <div class="aktuality__block">
+                <div class="o-nas__list">
+                    <div class="sec__aktuality--modul">
+                        <div class="aktuality__ico">
+                            <img src="./ico/bubble21.svg" alt="datum-21.">
+                        </div>
+                        <div class="sec__aktuality--modul--text">
+                            <p><b>Přidán nový modul do administrace</b></p>
+                            <p>Lorem ipsum dolor sia nostra, per inceptos hymenaeos. Nulla turpis magna, cursus sit amet, suscipit a, interdum id, felis.</p>
+                            <a href="#"><span class="orange">Přečíst celý článek</span ></a>
+                        </div>
+                    </div>
                 </div>
-            </div>
-            <div class="sec__aktuality--sleva">
-                <div class="aktuality__ico"><img src="./ico/bubble8.svg" alt="datum-8."></div>
-                <div class="sec__aktuality--sleva--text">
-                    <p><b>Sleva na  3 pozice 20%</b></p>
-                    <p>V roce 2022 jsme si pro vás připravili slevu 20% pro nové 3 pozice v naší aplikaci...</p>
-                    <div class="sec__aktuality--sleva--vic"><a href="#"><span class="orange">Přečíst celý článek</span ></a></div>
+                <div class="o-nas__list">
+                    <div class="sec__aktuality--sleva">
+                        <div class="aktuality__ico"><img src="./ico/bubble8.svg" alt="datum-8."></div>
+                        <div class="sec__aktuality--sleva--text">
+                            <p><b>Sleva na  3 pozice 20%</b></p>
+                            <p>V roce 2022 jsme si pro vás připravili slevu 20% pro nové 3 pozice v naší aplikaci...</p>
+                            <div class="sec__aktuality--sleva--vic"><a href="#"><span class="orange">Přečíst celý článek</span ></a></div>
+                        </div>
+                    </div>
                 </div>
             </div>
         </section>
     </main>
     <footer>
-        <div class="footer__items">
-            <div class="footer__items--flex">
-                <div class="footer__item">
-                    <a href="./index.html" class="navbar__logo footer__menu--text"><img src="./ico/Logo.svg" alt="logo Ipsum">Logo Ipsum</a>
-                    <p><b>Pslib.cz s.r.o</b></p>
-                    <p>Masarykova 12345</p>
-                    <p>460 00 Liberec</p>
-                    <div>
-                        <p>+420 777 666 666</p>
-                        <p>info@l3web.cz</p>
-                    </div>
-                </div>
-                <div class="footer__item">
-                    <h3 class="footer__h3">Videotutoriály</h3>
-                    <p>CSS</p>
-                    <p>Animace</p>
-                    <p>Stříhání videa</p>
-                    <p>Výběr barev</p>
-                    <p>Plánování pracovníků a mezd</p>
-                    <p>Všechna videa</p>
+        <div class="footer__block">
+            <div class="footer__item">
+                <a href="./index.html" class="navbar__logo footer__menu--text"><img src="./ico/Logo.svg" alt="logo Ipsum">Logo Ipsum</a>
+                <p><b>Pslib.cz s.r.o</b></p>
+                <p>Masarykova 12345</p>
+                <p>460 00 Liberec</p>
+                <div>
+                    <p>+420 777 666 666</p>
+                    <p>info@l3web.cz</p>
                 </div>
             </div>
-            <div class="footer__items--flex">
-                <div class="footer__item">
-                    <h3 class="footer__h3">Podpora</h3>
-                    <p>Přihlášení k účtu</p>
-                    <p>Školení</p>
-                    <p>FAQ - časté dotazy</p>
-                    <p>Kontakty</p>
-                    <p>Videotutoriály</p>
-                </div>
-                <div class="footer__item--menu">
-                    <h3 class="footer__h3">Menu</h3>
-                    <a class="footer__menu--text" href="./index.html">Úvod</a>
-                    <a class="footer__menu--text" href="./funkce.html">Funkce</a>
-                    <a class="footer__menu--text" href="#">Podpora</a>
-                    <a class="footer__menu--text" href="#">Ceník</a>
-                    <a class="footer__menu--text" href="./kontakt.html">Kontakt</a>
-                </div>
+            <div class="footer__item">
+                <h3 class="footer__h3">Videotutoriály</h3>
+                <p>CSS</p>
+                <p>Animace</p>
+                <p>Stříhání videa</p>
+                <p>Výběr barev</p>
+                <p>Plánování pracovníků a mezd</p>
+                <p>Všechna videa</p>
             </div>
+            <div class="footer__item">
+                <h3 class="footer__h3">Podpora</h3>
+                <p>Přihlášení k účtu</p>
+                <p>Školení</p>
+                <p>FAQ - časté dotazy</p>
+                <p>Kontakty</p>
+                <p>Videotutoriály</p>
+            </div>
+            <div class="footer__item--menu">
+                <h3 class="footer__h3">Menu</h3>
+                <a class="footer__menu--text" href="./index.html">Úvod</a>
+                <a class="footer__menu--text" href="./funkce.html">Funkce</a>
+                <a class="footer__menu--text" href="#">Podpora</a>
+                <a class="footer__menu--text" href="#">Ceník</a>
+                <a class="footer__menu--text" href="./kontakt.html">Kontakt</a>
+            </div>
+        </div>
+        <div class="sec__vyhody--line">
+            <span class="footer__line"></span>
         </div>
         <div class="footer__item--underline">
             <div class="footer__underline--text">
                 <p>&copy; Copyright 2023 - Pslib.cz s.r.o</p> 
+                <span class="footer__underline--line"></span>
                 <p>Cookies</p>
+                <span class="footer__underline--line"></span>
                 <p>Podmínky užití</p>
             </div>
             <p>Vyrobilo: B interactive</p>

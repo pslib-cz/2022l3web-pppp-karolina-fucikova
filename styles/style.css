@@ -14,20 +14,6 @@
     --svetlaSediva: #F5F5F5;
 }
 
-.nav-span::before {
-    content: "";
-    width: 3px;
-    height: 20px;
-    background-color: var(--Seda);
-}
-/*html {
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-}
-body {
-    margin: 0;
-    background-color: rgb(228, 205, 241);
-}
-*/
 .hamburger {
     display: block;
 }
@@ -35,11 +21,6 @@ body {
 .hamburger-nav {
     background-color: var(--Orange);
     border-top: 2px solid var(--tmavaModra);
-}
-
-.hamburger-nav li {
-    display: block;
-    padding: 0 1em;
 }
 
 .hamburger-nav a:hover {
@@ -71,60 +52,33 @@ body {
     color: var(--Orange);
 }
 
-.nav-item{
-    text-align: center;
-    border-bottom: 2px solid var(--tmavaModra);
-}
-
-@media screen and (min-width: 640px) {
+@media screen and (min-width: 768px) {
     .hamburger-btn {
         display: none;
     }
 
     .hamburger-nav {
         transform: none;
-    }
-
-    .hamburger-nav ul {
-        height: 100%;
-        max-width: 300px;
-        /*border-right: 1px solid rgb(96, 80, 128);*/
+        background-color: var(--Bila);
+        border: none;
     }
 
     .btn-cta {
-        font-size: 22px;
-        font-weight: bold;
-        display: flex;
         background-color: var(--Orange);
         border-radius: 1em;
-        color: var(--Bila);
-        /*width: fit-content;*/
+        padding: 10px 20px;
+        margin: 16px;
     }
     
     .btn-cta:hover {
-        border-radius: 1em;
         border: 5px solid var(--Orange);
         background-color: var(--Bila);
-        color: var(--Orange);
         font-weight: bold;
+        padding: 5px 15px;
     }
 
     .btn-cta > a {
         color: var(--Bila);
-    }
-    
-    .nav-item{
-        text-align: center;
-    }
-    
-    .hamburger-nav {
-        background-color: var(--Bila);
-        border-top: none;
-        border-bottom: none;
-    }
-    
-    .hamburger-nav li {
-        display: flex;
     }
     
     .hamburger-nav a:hover {
@@ -132,9 +86,10 @@ body {
     }
 
     .hamburger-row {
-        padding: 1em;
         display: flex;
         justify-content: space-between;
         color: var(--Cerna);
+        align-content: center;
+        padding: 1em;
     }
 }

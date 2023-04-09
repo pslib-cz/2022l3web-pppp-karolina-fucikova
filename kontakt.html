@@ -29,18 +29,19 @@
                     <p class="icon-profile">Přihlášení</p>
                 </a>
         </div>
-        <div class="hamburger-row">
-            <div class="navbar__logoipsum">
-                <a href="./index.html" class="navbar__logo"><img src="./ico/Logo.svg" alt="logo Ipsum" ><!--width="170"-height="41"-->Logo Ipsum</a>
+        <div class="header__navigace">
+            <div class="hamburger-row">
+                <div class="navbar__logoipsum">
+                    <a href="./index.html" class="navbar__logo"><img src="./ico/Logo.svg" alt="logo Ipsum" ><!--width="170"-height="41"-->Logo Ipsum</a>
+                </div>
+                <a href="javascript:void(0)" class="hamburger hamburger-btn hamburger-zone">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </a>
             </div>
-            <a href="javascript:void(0)" class="hamburger hamburger-btn hamburger-zone">
-                <span></span>
-                <span></span>
-                <span></span>
-            </a>
-        </div>
-        <div class="navigace">
-            <nav class="navbar hamburger-nav hamburger-zone">
+            <div class="navigace">
+                <nav class="navbar hamburger-nav hamburger-zone">
                     <ul class="nav__pages">
                         <li class="nav-item">
                             <a class="nav-link" href="./index.html">Úvod</a>
@@ -57,12 +58,13 @@
                         <li class="nav-item">
                             <a class="nav-link" href="./kontakt.html">Kontakt</a>
                         </li>
+                        <li class="nav__border"></li>
+                        <li class="nav-item btn-cta">
+                            <a href="#">Zkušební verze</a>
+                        </li> 
                     </ul>
-                <span class="nav__border"></span>
-                <li class="nav-item btn-cta">
-                    <a href="#">Zkušební verze</a>
-                </li> 
-            </nav>
+                </nav>
+            </div>
         </div>
     </header>
     <main>
@@ -71,7 +73,7 @@
             <div class="drobenka">
                 <a href="./index.html">Úvod</a>
                 <span class="drobenka__span"></span>
-                <a href="./funkce.html">Kontakt</a>
+                <a href="./kontakt.html">Kontakt</a>
             </div>
         </section>
         <section class="kontakt__sec2">
@@ -91,84 +93,91 @@
         </section>
         <img src="https://goo.gl/maps/qyEoKppufyGWZZqq7" alt="Mapa" class="mapa">
         <section class="kontakt__sec3 kontakt__pozadi">
-            <div class="kontakt__personal">
-                <div class="foto__profil">
-                    <img src="./images/profil-michaela.svg" alt="Evropanka">
-                </div>
-                <div class="kontakt__personal--text">
-                    <p>Michaela Komorousová</p>
-                    <p>Personalista</p>
-                    <p>E-mail: mKom@logoipsum.com</p>
-                    <p>Tel: +420 487 989 612</p>
-                </div>
-            </div>
-            <div class="kontakt__personal">
-                <div class="foto__profil">
-                    <img src="./images/profil-anna.svg" alt="Asiatka">
-                </div>
-                <div class="kontakt__personal--text">
-                    <p>Anna Suchánková</p>
-                    <p>Personalista, Magna Exteriors s.r.o.</p>
-                    <p>Email: aSuch@logoipsum.com</p>
-                    <p>Tel: +420 487 989 618</p>
+            <div class="kontakt__personal--block">
+                <div class="kontakt__personal">
+                    <div class="foto__profil">
+                        <img src="./images/profil-michaela.svg" alt="Evropanka">
+                    </div>
+                    <div class="kontakt__personal--text">
+                        <p>Michaela Komorousová</p>
+                        <p>Personalista</p>
+                        <p>E-mail: mKom@logoipsum.com</p>
+                        <p>Tel: +420 487 989 612</p>
+                    </div>
                 </div>
             </div>
-            <div class="kontakt__personal">
-                <img src="./ico/Logo.svg" alt="Logo" class="foto__logo">
-                <div class="kontakt__personal--text">
-                    <p>Informace</p>
-                    <p>E-mail: info@logoipsum.com</p>
-                    <p>Pokud se chcete na něco zeptat...</p>
+            <div class="kontakt__personal--block">
+                <div class="kontakt__personal">
+                    <div class="foto__profil">
+                        <img src="./images/profil-anna.svg" alt="Asiatka">
+                    </div>
+                    <div class="kontakt__personal--text">
+                        <p>Anna Suchánková</p>
+                        <p>Personalista, Magna Exteriors s.r.o.</p>
+                        <p>Email: aSuch@logoipsum.com</p>
+                        <p>Tel: +420 487 989 618</p>
+                    </div>
+                </div>
+            </div>
+            <div class="kontakt__personal--block">
+                <div class="kontakt__personal">
+                    <img src="./ico/Logo.svg" alt="Logo" class="foto__logo">
+                    <div class="kontakt__personal--text">
+                        <p>Informace</p>
+                        <p>E-mail: info@logoipsum.com</p>
+                        <p>Pokud se chcete na něco zeptat...</p>
+                    </div>
                 </div>
             </div>
         </section>
     </main>
     <footer>
-        <div class="footer__items">
-            <div class="footer__items--flex">
-                <div class="footer__item">
-                    <a href="./index.html" class="navbar__logo footer__menu--text"><img src="./ico/Logo.svg" alt="logo Ipsum">Logo Ipsum</a>
-                    <p><b>Pslib.cz s.r.o</b></p>
-                    <p>Masarykova 12345</p>
-                    <p>460 00 Liberec</p>
-                    <div>
-                        <p>+420 777 666 666</p>
-                        <p>info@l3web.cz</p>
-                    </div>
-                </div>
-                <div class="footer__item">
-                    <h3 class="footer__h3">Videotutoriály</h3>
-                    <p>CSS</p>
-                    <p>Animace</p>
-                    <p>Stříhání videa</p>
-                    <p>Výběr barev</p>
-                    <p>Plánování pracovníků a mezd</p>
-                    <p>Všechna videa</p>
+        <div class="footer__block">
+            <div class="footer__item">
+                <a href="./index.html" class="navbar__logo footer__menu--text"><img src="./ico/Logo.svg" alt="logo Ipsum">Logo Ipsum</a>
+                <p><b>Pslib.cz s.r.o</b></p>
+                <p>Masarykova 12345</p>
+                <p>460 00 Liberec</p>
+                <div>
+                    <p>+420 777 666 666</p>
+                    <p>info@l3web.cz</p>
                 </div>
             </div>
-            <div class="footer__items--flex">
-                <div class="footer__item">
-                    <h3 class="footer__h3">Podpora</h3>
-                    <p>Přihlášení k účtu</p>
-                    <p>Školení</p>
-                    <p>FAQ - časté dotazy</p>
-                    <p>Kontakty</p>
-                    <p>Videotutoriály</p>
-                </div>
-                <div class="footer__item--menu">
-                    <h3 class="footer__h3">Menu</h3>
-                    <a class="footer__menu--text" href="./index.html">Úvod</a>
-                    <a class="footer__menu--text" href="./funkce.html">Funkce</a>
-                    <a class="footer__menu--text" href="#">Podpora</a>
-                    <a class="footer__menu--text" href="#">Ceník</a>
-                    <a class="footer__menu--text" href="./kontakt.html">Kontakt</a>
-                </div>
+            <div class="footer__item">
+                <h3 class="footer__h3">Videotutoriály</h3>
+                <p>CSS</p>
+                <p>Animace</p>
+                <p>Stříhání videa</p>
+                <p>Výběr barev</p>
+                <p>Plánování pracovníků a mezd</p>
+                <p>Všechna videa</p>
             </div>
+            <div class="footer__item">
+                <h3 class="footer__h3">Podpora</h3>
+                <p>Přihlášení k účtu</p>
+                <p>Školení</p>
+                <p>FAQ - časté dotazy</p>
+                <p>Kontakty</p>
+                <p>Videotutoriály</p>
+            </div>
+            <div class="footer__item--menu">
+                <h3 class="footer__h3">Menu</h3>
+                <a class="footer__menu--text" href="./index.html">Úvod</a>
+                <a class="footer__menu--text" href="./funkce.html">Funkce</a>
+                <a class="footer__menu--text" href="#">Podpora</a>
+                <a class="footer__menu--text" href="#">Ceník</a>
+                <a class="footer__menu--text" href="./kontakt.html">Kontakt</a>
+            </div>
+        </div>
+        <div class="sec__vyhody--line">
+            <span class="footer__line"></span>
         </div>
         <div class="footer__item--underline">
             <div class="footer__underline--text">
                 <p>&copy; Copyright 2023 - Pslib.cz s.r.o</p> 
+                <span class="footer__underline--line"></span>
                 <p>Cookies</p>
+                <span class="footer__underline--line"></span>
                 <p>Podmínky užití</p>
             </div>
             <p>Vyrobilo: B interactive</p>

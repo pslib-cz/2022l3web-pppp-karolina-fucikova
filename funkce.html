@@ -29,18 +29,19 @@
                     <p class="icon-profile">Přihlášení</p>
                 </a>
         </div>
-        <div class="hamburger-row">
-            <div class="navbar__logoipsum">
-                <a href="./index.html" class="navbar__logo"><img src="./ico/Logo.svg" alt="logo Ipsum" ><!--width="170"-height="41"-->Logo Ipsum</a>
+        <div class="header__navigace">
+            <div class="hamburger-row">
+                <div class="navbar__logoipsum">
+                    <a href="./index.html" class="navbar__logo"><img src="./ico/Logo.svg" alt="logo Ipsum" ><!--width="170"-height="41"-->Logo Ipsum</a>
+                </div>
+                <a href="javascript:void(0)" class="hamburger hamburger-btn hamburger-zone">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </a>
             </div>
-            <a href="javascript:void(0)" class="hamburger hamburger-btn hamburger-zone">
-                <span></span>
-                <span></span>
-                <span></span>
-            </a>
-        </div>
-        <div class="navigace">
-            <nav class="navbar hamburger-nav hamburger-zone">
+            <div class="navigace">
+                <nav class="navbar hamburger-nav hamburger-zone">
                     <ul class="nav__pages">
                         <li class="nav-item">
                             <a class="nav-link" href="./index.html">Úvod</a>
@@ -57,12 +58,13 @@
                         <li class="nav-item">
                             <a class="nav-link" href="./kontakt.html">Kontakt</a>
                         </li>
+                        <li class="nav__border"></li>
+                        <li class="nav-item btn-cta">
+                            <a href="#">Zkušební verze</a>
+                        </li> 
                     </ul>
-                <span class="nav__border"></span>
-                <li class="nav-item btn-cta">
-                    <a href="#">Zkušební verze</a>
-                </li> 
-            </nav>
+                </nav>
+            </div>
         </div>
     </header>
     <main>
@@ -84,54 +86,78 @@
             </div>
         </section>
         <section class="funkce__grid funkce__pozadi">
-            <a class="procesy__item"><!--grid-->
-                <h3>Administrace aplikace</h3>
-                <p>Integer malesuada. Nullam faucibus mi quis velit. Fusce consectetuer risus a nunc. Nam...</p>
-            </a>
-            <a class="procesy__item">
-                <h3 class="orange">Firemní procesy</h3>
-                <p>Integer malesuada. Nullam faucibus mi quis velit. Fusce consectetuer risus a nunc. Nam...</p>
-            </a>
-            <a class="procesy__item">
-                <h3 class="orange">Firemní procesy</h3>
-                <p>Integer malesuada. Nullam faucibus mi quis velit. Fusce consectetuer risus a nunc. Nam...</p>
-            </a>
-            <a class="procesy__item">
-                <h3 class="orange">Firemní procesy</h3>
-                <p><b>Integer malesuada. Nullam faucibus mi quis velit. Fusce consectetuer risus a nunc. Nam...</b></p>
-            </a>
-            <a class="procesy__item">
-                <h3 class="orange">Firemní procesy</h3>
-                <p><b>Integer malesuada. Nullam faucibus mi quis velit. Fusce consectetuer risus a nunc. Nam...</b></p>
-            </a>
-            <a class="procesy__item">
-                <h3 class="orange">Firemní procesy</h3>
-                <p>Integer malesuada. Nullam faucibus mi quis velit. Fusce consectetuer risus a nunc. Nam...</p>
-            </a>
-            <a class="procesy__item">
-                <h3 class="orange">Firemní procesy</h3>
-                <p>Integer malesuada. Nullam faucibus mi quis velit. Fusce consectetuer risus a nunc. Nam...</p>
-            </a>
-            <a class="procesy__item">
-                <h3 class="orange">Firemní procesy</h3>
-                <p>Integer malesuada. Nullam faucibus mi quis velit. Fusce consectetuer risus a nunc. Nam...</p>
-            </a>
-            <a class="procesy__item">
-                <h3 class="orange">Firemní procesy</h3>
-                <p>Integer malesuada. Nullam faucibus mi quis velit. Fusce consectetuer risus a nunc. Nam...</p>
-            </a>
-            <a class="procesy__item">
-                <h3 class="orange">Firemní procesy</h3>
-                <p>Integer malesuada. Nullam faucibus mi quis velit. Fusce consectetuer risus a nunc. Nam...</p>
-            </a>
-            <a class="procesy__item">
-                <h3 class="orange">Firemní procesy</h3>
-                <p>Integer malesuada. Nullam faucibus mi quis velit. Fusce consectetuer risus a nunc. Nam...</p>
-            </a>
-            <a class="procesy__item">
-                <h3 class="orange">Firemní procesy</h3>
-                <p>Integer malesuada. Nullam faucibus mi quis velit. Fusce consectetuer risus a nunc. Nam...</p>
-            </a>
+            <div class="grid__procesy">
+                <a class="procesy__item"><!--grid-->
+                    <h3>Administrace aplikace</h3>
+                    <p>Integer malesuada. Nullam faucibus mi quis velit. Fusce consectetuer risus a nunc. Nam...</p>
+                </a>
+            </div>
+            <div class="grid__procesy">
+                <a class="procesy__item">
+                    <h3 class="orange">Firemní procesy</h3>
+                    <p>Integer malesuada. Nullam faucibus mi quis velit. Fusce consectetuer risus a nunc. Nam...</p>
+                </a>
+            </div>
+            <div class="grid__procesy">
+                <a class="procesy__item">
+                    <h3 class="orange">Firemní procesy</h3>
+                    <p>Integer malesuada. Nullam faucibus mi quis velit. Fusce consectetuer risus a nunc. Nam...</p>
+                </a>
+            </div>
+            <div class="grid__procesy">
+                <a class="procesy__item">
+                    <h3 class="orange">Firemní procesy</h3>
+                    <p><b>Integer malesuada. Nullam faucibus mi quis velit. Fusce consectetuer risus a nunc. Nam...</b></p>
+                </a>
+            </div>
+            <div class="grid__procesy">
+                <a class="procesy__item">
+                    <h3 class="orange">Firemní procesy</h3>
+                    <p><b>Integer malesuada. Nullam faucibus mi quis velit. Fusce consectetuer risus a nunc. Nam...</b></p>
+                </a>
+            </div>
+            <div class="grid__procesy">
+                <a class="procesy__item">
+                    <h3 class="orange">Firemní procesy</h3>
+                    <p>Integer malesuada. Nullam faucibus mi quis velit. Fusce consectetuer risus a nunc. Nam...</p>
+                </a>
+            </div>
+            <div class="grid__procesy">
+                <a class="procesy__item">
+                    <h3 class="orange">Firemní procesy</h3>
+                    <p>Integer malesuada. Nullam faucibus mi quis velit. Fusce consectetuer risus a nunc. Nam...</p>
+                </a>
+            </div>
+            <div class="grid__procesy">
+                <a class="procesy__item">
+                    <h3 class="orange">Firemní procesy</h3>
+                    <p>Integer malesuada. Nullam faucibus mi quis velit. Fusce consectetuer risus a nunc. Nam...</p>
+                </a>
+            </div>
+            <div class="grid__procesy">
+                <a class="procesy__item">
+                    <h3 class="orange">Firemní procesy</h3>
+                    <p>Integer malesuada. Nullam faucibus mi quis velit. Fusce consectetuer risus a nunc. Nam...</p>
+                </a>
+            </div>
+            <div class="grid__procesy">
+                <a class="procesy__item">
+                    <h3 class="orange">Firemní procesy</h3>
+                    <p>Integer malesuada. Nullam faucibus mi quis velit. Fusce consectetuer risus a nunc. Nam...</p>
+                </a>
+            </div>
+            <div class="grid__procesy">
+                <a class="procesy__item">
+                    <h3 class="orange">Firemní procesy</h3>
+                    <p>Integer malesuada. Nullam faucibus mi quis velit. Fusce consectetuer risus a nunc. Nam...</p>
+                </a>
+            </div>
+            <div class="grid__procesy">
+                <a class="procesy__item">
+                    <h3 class="orange">Firemní procesy</h3>
+                    <p>Integer malesuada. Nullam faucibus mi quis velit. Fusce consectetuer risus a nunc. Nam...</p>
+                </a>
+            </div>
         </section>
         <section class="funkce__dotazy">
             <h2>
@@ -139,57 +165,58 @@
             </h2>
             <p>Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur</p>
             <p><b>podpora@l3web.cz</b></p>
-            <a href="./kontakt.html" class="button funkce-btn">Napište nám email?</a>
+            <div class="sec__btn"><a href="./kontakt.html" class="button funkce-btn">Napište nám email?</a></div>
             <p>nebo</p>
-            <a href="./kontakt.html" class="button funkce-btn">Zavolejte nám</a>
+            <div class="sec__btn"><a href="./kontakt.html" class="button funkce-btn">Zavolejte nám</a></div>
         </section>
     </main>
     <footer>
-        <div class="footer__items">
-            <div class="footer__items--flex">
-                <div class="footer__item">
-                    <a href="./index.html" class="navbar__logo footer__menu--text"><img src="./ico/Logo.svg" alt="logo Ipsum">Logo Ipsum</a>
-                    <p><b>Pslib.cz s.r.o</b></p>
-                    <p>Masarykova 12345</p>
-                    <p>460 00 Liberec</p>
-                    <div>
-                        <p>+420 777 666 666</p>
-                        <p>info@l3web.cz</p>
-                    </div>
-                </div>
-                <div class="footer__item">
-                    <h3 class="footer__h3">Videotutoriály</h3>
-                    <p>CSS</p>
-                    <p>Animace</p>
-                    <p>Stříhání videa</p>
-                    <p>Výběr barev</p>
-                    <p>Plánování pracovníků a mezd</p>
-                    <p>Všechna videa</p>
+        <div class="footer__block">
+            <div class="footer__item">
+                <a href="./index.html" class="navbar__logo footer__menu--text"><img src="./ico/Logo.svg" alt="logo Ipsum">Logo Ipsum</a>
+                <p><b>Pslib.cz s.r.o</b></p>
+                <p>Masarykova 12345</p>
+                <p>460 00 Liberec</p>
+                <div>
+                    <p>+420 777 666 666</p>
+                    <p>info@l3web.cz</p>
                 </div>
             </div>
-            <div class="footer__items--flex">
-                <div class="footer__item">
-                    <h3 class="footer__h3">Podpora</h3>
-                    <p>Přihlášení k účtu</p>
-                    <p>Školení</p>
-                    <p>FAQ - časté dotazy</p>
-                    <p>Kontakty</p>
-                    <p>Videotutoriály</p>
-                </div>
-                <div class="footer__item--menu">
-                    <h3 class="footer__h3">Menu</h3>
-                    <a class="footer__menu--text" href="./index.html">Úvod</a>
-                    <a class="footer__menu--text" href="./funkce.html">Funkce</a>
-                    <a class="footer__menu--text" href="#">Podpora</a>
-                    <a class="footer__menu--text" href="#">Ceník</a>
-                    <a class="footer__menu--text" href="./kontakt.html">Kontakt</a>
-                </div>
+            <div class="footer__item">
+                <h3 class="footer__h3">Videotutoriály</h3>
+                <p>CSS</p>
+                <p>Animace</p>
+                <p>Stříhání videa</p>
+                <p>Výběr barev</p>
+                <p>Plánování pracovníků a mezd</p>
+                <p>Všechna videa</p>
             </div>
+            <div class="footer__item">
+                <h3 class="footer__h3">Podpora</h3>
+                <p>Přihlášení k účtu</p>
+                <p>Školení</p>
+                <p>FAQ - časté dotazy</p>
+                <p>Kontakty</p>
+                <p>Videotutoriály</p>
+            </div>
+            <div class="footer__item--menu">
+                <h3 class="footer__h3">Menu</h3>
+                <a class="footer__menu--text" href="./index.html">Úvod</a>
+                <a class="footer__menu--text" href="./funkce.html">Funkce</a>
+                <a class="footer__menu--text" href="#">Podpora</a>
+                <a class="footer__menu--text" href="#">Ceník</a>
+                <a class="footer__menu--text" href="./kontakt.html">Kontakt</a>
+            </div>
+        </div>
+        <div class="sec__vyhody--line">
+            <span class="footer__line"></span>
         </div>
         <div class="footer__item--underline">
             <div class="footer__underline--text">
                 <p>&copy; Copyright 2023 - Pslib.cz s.r.o</p> 
+                <span class="footer__underline--line"></span>
                 <p>Cookies</p>
+                <span class="footer__underline--line"></span>
                 <p>Podmínky užití</p>
             </div>
             <p>Vyrobilo: B interactive</p>

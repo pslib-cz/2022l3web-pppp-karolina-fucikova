@@ -53,6 +53,7 @@ h1, h2, h3{
     width: fit-content;
     text-align: center;
     justify-content: center;
+    margin: 1em;
 }
 
 .button:hover {
@@ -62,6 +63,11 @@ h1, h2, h3{
     color: var(--Orange);
     font-weight: bold;
     padding: 0.7em;
+}
+
+.sec__btn{
+    display: flex;
+    justify-content: center;
 }
 
 .drobenka{
@@ -155,23 +161,29 @@ h1, h2, h3{
     font-weight: bold;
 }
 
-.nav-item{
-    display: block;
-    padding: 0.5em 0.25em;
-    text-align: center;
-    border-top: 2px solid var(--tmavaModra);
-    border-bottom: 0.5px solid var(--tmavaModra);
-}
 .navbar{
     position: absolute;
     width: 100%;
 }
+
+.nav-item{
+    display: block;
+    text-align: center;
+    border-bottom: 2px solid var(--tmavaModra);
+    padding: 0.5em 1em;
+}
+
 /*HOMEPAGE*/
 
-.sec1__btn{
+.sec1__check{
     display: flex;
     align-items: center;
     justify-content: space-between;
+}
+
+.sec1__check--text ul{
+    padding: 5px 5px ;
+    margin: 0;
 }
 
 .section1{
@@ -179,6 +191,7 @@ h1, h2, h3{
     justify-content: space-around;
     flex-direction: column;
     margin: 10px;
+    padding: 20px;
 }
 
 .sec1__h1{
@@ -187,8 +200,8 @@ h1, h2, h3{
 }
 
 .section1__item--text{
-    margin: 10px;
-    padding: 10px;
+    padding: 0;
+    margin: 0 0 15px 0;
 }
 
 .homepage__h2{
@@ -203,13 +216,17 @@ h1, h2, h3{
     gap: 5px;
 }
 
-.sec__vyhody--up, .sec__vyhody--down{
+.sec__vyhody{
     display: flex;
-    justify-content: space-around;
+    text-align: center;
+    flex-wrap: wrap;
+    justify-content: center;
 }
 
-.sec__vyhody--hodiny, .sec__vyhody--planeta, .sec__vyhody--sipky, .sec__vyhody--seznam{
-    text-align: center;
+.sec__vyhody--blocs{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
 }
 
 .sec__vyhody--blocs--Administrace, .sec__vyhody--blocs--Popisy, .sec__vyhody--blocs--Tvorba, .sec__vyhody--blocs--Procesy{
@@ -224,12 +241,51 @@ h1, h2, h3{
     color: var(--tmavaModra)
 }
 
-.o-nas-list__item{
+.pribeh__block{
+    display: flex;
+    flex-direction: column;
+}
+
+.pribeh__item{
+    display: flex;
+    flex-direction: column;
+    margin-top: 1em;
+    align-items: center;
+}
+
+.sec__pribeh--text{
+    max-width: 450px;
+    padding: 1em;
+}
+
+.pribeh__knihy{
     display: flex;
     justify-content: center;
+}
+
+.o-nas__list{
+    display: flex;
+    justify-content: center;
+}
+
+.o-nas__block{
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.o-nas-list__item{
+    display: flex;
     margin: 1em;
     align-items: center;
-    width: 450px;
+    max-width: 450px;
+}
+
+.aktuality__block{
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    margin-bottom: 10px;
 }
 
 .sec__aktuality{
@@ -239,12 +295,10 @@ h1, h2, h3{
 }
 
 .sec__aktuality--modul, .sec__aktuality--sleva{
-    position: relative;
-    justify-content: center;
     display: flex;
     margin: 1em;
     align-items: center;
-    width: 450px;
+    max-width: 450px;
 }
 
 .aktuality__ico{
@@ -260,14 +314,8 @@ h1, h2, h3{
 }
 
 .sec--modra{
-    background-color: #8ecae688;
+    background-color: #8ecae63f;
     padding: 20px;
-}
-
-.sec_vyhody--btn{
-    display: flex;
-    justify-content: center;
-    width: 100px;
 }
 
 /*FUNKCE*/
@@ -282,6 +330,11 @@ h1, h2, h3{
     padding: 20px;
     gap: 20px;
     margin: 1em;
+}
+
+.grid__procesy{
+    display: flex;
+    justify-content: center;
 }
 
 .procesy__item{
@@ -350,7 +403,12 @@ h1, h2, h3{
     justify-content: center;
     margin: 1em;
     align-items: center;
-    width: 450px;
+    max-width: 450px;
+}
+
+.kontakt__personal--block{
+    display: flex;
+    justify-content: center;
 }
 
 .foto__logo{
@@ -362,11 +420,13 @@ h1, h2, h3{
 footer{
     background-color:  var(--tmavaModra);
     color: var(--svetlaModra);
+    padding: 10px 0 10px 0;
 }
 
-.footer__items--flex{
+.footer__block{
     display: flex;
     justify-content: space-around;
+    flex-wrap: wrap;
 }
 
 .footer__item{
@@ -400,38 +460,141 @@ footer{
 
 /*MEDIAQ*/
 
-@media screen and (min-width: 640px){
+@media screen and (min-width: 768px){
+/*Q-HEADER*/
+
     .header__inline p {
         visibility: visible;
+        position: relative;
+        margin: 0;
     }
 
-    .section1{
-        flex-wrap: nowrap;
-        flex-direction: column;
+    .header__kontakt p {
+        min-width: 150px;
     }
+
+/*Q-NAVIGACE*/
+
+    .header__navigace{
+        display: flex;
+        align-items: center;
+        margin: 1em;
+    }
+
+    .navigace{
+            display: flex;
+            transition: none;
+            width: auto;
+            right: 0;
+            justify-content: space-between;
+        }
+
     .navbar{
         display: flex;
-        /*min-width: 600px;*/
+        position: relative;
         justify-content: space-between;
-        align-items: center;
+        width: auto;
     }
 
     .nav__pages{
         display: flex;
-        min-width: 400px;
+        align-items: center;
         justify-content: space-between;
-        /*position: relative;*/
     }
 
     .nav__border{
-        border: 1px solid  var(--Seda);
+        border: 2px solid  var(--Seda);
         align-self: center;
-        height: 2em;
+        height: 30px;
     }
-    .navigace{
+
+    .nav-item{
+        border: none;
+    }
+    
+/*Q-HOMEPAGE*/
+
+    .section1{
         display: flex;
-        align-items: center;
-        justify-content: space-between;
+        flex-wrap: nowrap;
+        flex-direction: row;
+        justify-content: space-around;
+    }
+
+    .sec1__check--block{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+    }
+
+    .sec1__check{
+        display: flex;
+        flex-direction: column;
+        align-items: start;
+    }
+
+    .section1__item--text{
+        padding: 0;
+        margin: 0;
+    }
+
+    .sec__vyhody{
+        display: flex;
+        justify-content: space-around;
+    }
+
+    .vyhody__item{
         margin: 10px;
     }
+
+    .sec__vyhody--line{
+        display: flex;
+        justify-content: center;
+        margin: 20px;
+    }
+
+    .vyhody__line{
+        border: 1px dashed var(--svetlaModra);
+        width: 600px;
+    }
+
+    .sec__vyhody--blocs{
+        display: flex;
+        justify-content: space-around;
+    }
+
+    .pribeh__block{
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+    }
+
+    .pribeh__item{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    .footer__item--underline{
+        display: flex;
+        justify-content: space-around;
+    }
+
+    .footer__underline--text{
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .footer__underline--line{
+        border: 0.5px solid  var(--svetlaModra);
+        align-self: center;
+        height: 20px;
+        margin: 10px;
+    }
+
+    .footer__line{
+        border: 1px solid var(--svetlaModra);
+        width: 100%;
+    }
+
 }
