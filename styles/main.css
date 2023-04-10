@@ -368,6 +368,7 @@ h1, h2, h3{
     background-color: var(--Bila);
     border-radius: 20px;
     padding: 10px;
+    color: var(--Cerna);
 }
 
 .procesy__item h3{
