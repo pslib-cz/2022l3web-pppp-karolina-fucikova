@@ -67,7 +67,7 @@
         background-color: var(--Orange);
         border-radius: 1em;
         padding: 10px 20px;
-        margin: 16px;
+        margin: 5px;
     }
     
     .btn-cta:hover {
@@ -75,12 +75,13 @@
         background-color: var(--Bila);
         font-weight: bold;
         padding: 5px 15px;
+        color: var(--Cerna);
     }
 
     .btn-cta > a {
         color: var(--Bila);
     }
-    
+
     .hamburger-nav a:hover {
         color: var(--Cerna);
     }
@@ -90,6 +91,6 @@
         justify-content: space-between;
         color: var(--Cerna);
         align-content: center;
-        padding: 1em;
+        padding: 0;
     }
 }

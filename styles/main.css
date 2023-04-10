@@ -92,15 +92,12 @@ h1, h2, h3{
 }
 /*HEADER*/
 
-.header{
-    margin: 10px;
-}
-
 .header__inline{
     display: flex;
     font-family: 'Hanken Grotesk', sans-serif;
     justify-content: space-between;
     padding: 1em;
+    background-color: var(--svetlaSediva);
 }
 
 .header__kontakt{
@@ -123,17 +120,6 @@ h1, h2, h3{
 }
 
 /*NAVIGACE*/
-
-.navigace{
-    position: absolute;
-    width: 100%;
-    transition: 1s;
-}
-
-.menu{
-    padding: 0;
-    margin: 0;
-}
 
 .navbar__logo{
     width: 185px;
@@ -164,6 +150,7 @@ h1, h2, h3{
 .navbar{
     position: absolute;
     width: 100%;
+    transition: 1s;
 }
 
 .nav-item{
@@ -229,7 +216,7 @@ h1, h2, h3{
     justify-content: center;
 }
 
-.sec__vyhody--blocs--Administrace, .sec__vyhody--blocs--Popisy, .sec__vyhody--blocs--Tvorba, .sec__vyhody--blocs--Procesy{
+.vyhody__blocs--item{
     background-color: var(--Bila);
     border-radius: 1em;
     width: 250px;
@@ -361,6 +348,7 @@ h1, h2, h3{
 .funkce__uvod{
     display: flex;
     align-items: center;
+    justify-content: space-between;
 }
 
 .Play{
@@ -463,6 +451,14 @@ footer{
 @media screen and (min-width: 768px){
 /*Q-HEADER*/
 
+    .header__kontakt{
+        margin-left: 150px;
+    }
+
+    .header__profile{
+        margin-right: 150px;
+    }
+
     .header__inline p {
         visibility: visible;
         position: relative;
@@ -479,27 +475,32 @@ footer{
         display: flex;
         align-items: center;
         margin: 1em;
+        justify-content: space-between;
+        margin: auto 150px auto 150px;
     }
-
-    .navigace{
-            display: flex;
-            transition: none;
-            width: auto;
-            right: 0;
-            justify-content: space-between;
-        }
 
     .navbar{
         display: flex;
         position: relative;
         justify-content: space-between;
-        width: auto;
+        width: 100%;
+        transition: none;
+        right: 0;
+        justify-content: space-between;
+        max-width: 700px;
     }
 
     .nav__pages{
         display: flex;
         align-items: center;
+        width: 100%;
         justify-content: space-between;
+        
+    }
+
+    .navbar__logo{
+        gap: 5px;
+        width: 190px;
     }
 
     .nav__border{
@@ -509,7 +510,15 @@ footer{
     }
 
     .nav-item{
+        display: flex;
+        padding: 5px;
         border: none;
+        justify-content: space-between;
+    }
+
+    .nav-item:hover{
+        border-bottom: 5px solid var(--Orange);
+        padding-top: 5px;
     }
     
 /*Q-HOMEPAGE*/
@@ -519,6 +528,7 @@ footer{
         flex-wrap: nowrap;
         flex-direction: row;
         justify-content: space-around;
+        margin: auto 150px auto 150px;
     }
 
     .sec1__check--block{
@@ -541,6 +551,7 @@ footer{
     .sec__vyhody{
         display: flex;
         justify-content: space-around;
+        margin: auto 150px auto 150px;
     }
 
     .vyhody__item{
@@ -561,12 +572,14 @@ footer{
     .sec__vyhody--blocs{
         display: flex;
         justify-content: space-around;
+        margin: auto 150px auto 150px;
     }
 
     .pribeh__block{
         display: flex;
         flex-direction: row;
         justify-content: center;
+        margin: auto 150px auto 150px;
     }
 
     .pribeh__item{
@@ -575,9 +588,44 @@ footer{
         justify-content: center;
     }
 
+    .o-nas__block{
+        margin: auto 150px auto 150px;
+    }
+
+    .aktuality__block{
+        margin: auto 150px auto 150px;
+    }
+
+    
+
+/*Q-FUNKCE*/
+
+    .funkce__sec1{
+        margin: auto 150px auto 150px;
+    }
+
+    .funkce__grid{
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        margin: auto 150px auto 150px;
+    }
+
+    .funkce__dotazy{
+        margin: auto 150px auto 150px;
+    }
+
+/*Q-KONTAKT*/
+
+    .kontakt__sec1, .kontakt__sec2, .kontakt__sec3{
+        margin: auto 150px auto 150px;
+    }
+
+/*Q-FOOTER*/
+
     .footer__item--underline{
         display: flex;
         justify-content: space-around;
+        margin: auto 150px auto 150px;
     }
 
     .footer__underline--text{
@@ -595,6 +643,9 @@ footer{
     .footer__line{
         border: 1px solid var(--svetlaModra);
         width: 100%;
+        margin: auto 150px auto 150px;
     }
-
+    .footer__block{
+            margin: auto 150px auto 150px;
+        }
 }
