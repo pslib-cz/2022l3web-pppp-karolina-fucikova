@@ -70,14 +70,14 @@
         margin: 5px;
     }
     
-    .btn-cta:hover {
+    .btn-cta:hover{
         border: 5px solid var(--Orange);
         background-color: var(--Bila);
         font-weight: bold;
         padding: 5px 15px;
         color: var(--Cerna);
     }
-
+    
     .btn-cta > a {
         color: var(--Bila);
     }

@@ -242,7 +242,7 @@ h1, h2, h3{
 .vyhody__blocs--item{
     background-color: var(--Bila);
     border-radius: 1em;
-    width: 225px;
+    width: 250px;
     margin: 10px;
     padding: 10px;
 }
@@ -291,7 +291,7 @@ h1, h2, h3{
     width: 100%;
   }
 
-  /*TE4KY*/
+  /*TECKY*/
 
   .carousel__navigation {
     display: flex;
@@ -302,38 +302,27 @@ h1, h2, h3{
     display: inline-block;
   }
 
-  .carousel__navigation--button{
-    display: inline-block;
-    width: 20px;
-    height: 20px;
-    background-color: var(--tmavaModra);
-    /*background-clip: content-box;*/
-    border-radius: 50%;
-    cursor: pointer;
-  }
-/*
-  .carousel__navigation--button{
-    display: inline-block;
-    width: 15px;
-    height: 15px;
-    background-color: inherit;
-    /*background-clip: content-box;*/
-    /*border-radius: 50%;
-    border: 3px solid var(--tmavaModra);
-    
-  }
-*/
+.carousel__navigation--list{
+    position: relative;
+}
 
-.carousel__navigation--button:first-child:checked /*~ .carousel__navigation--button:nth-of-type(2) */{
+  .carousel__navigation--button1{
+    display: inline-block;
+    width: 15px;
+    height: 15px;
+    background-color: var(--tmavaModra);
+    border-radius: 50%;
+    border: 3px solid var(--tmavaModra);
+  }
+
+  .carousel__navigation--button2{
     display: inline-block;
     width: 15px;
     height: 15px;
     background-color: inherit;
-    /*background-clip: content-box;*/
     border-radius: 50%;
     border: 3px solid var(--tmavaModra);
 }
-
 
 .pribeh__block{
     display: flex;
@@ -401,8 +390,9 @@ h1, h2, h3{
     margin: 1em;
 }
 
-.sec__aktuality--sleva--vic{
-    text-align: right;
+.sec__aktuality--vic{
+    display: flex;
+    justify-content: start;
 }
 
 .homapage__pozadi--sediva{
@@ -412,6 +402,10 @@ h1, h2, h3{
 .sec--modra{
     background-color: #8ecae63f;
     padding: 20px;
+}
+
+.aktuality__text--hide{
+    position: absolute;
 }
 
 /*FUNKCE*/
@@ -452,6 +446,18 @@ h1, h2, h3{
 .procesy__item:hover h3{
     color: var(--pismoModra);
 }
+
+.procesy__item--sipka{
+    position: absolute;
+    bottom: -18px;
+    right: 20px;
+    visibility: hidden;
+}
+
+.procesy__item:hover .procesy__item--sipka{
+    visibility: visible;
+}
+
 
 .funkce__pozadi {
     background-color: var(--Sediva);
