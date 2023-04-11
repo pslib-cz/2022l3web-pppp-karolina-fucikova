@@ -1,17 +1,5 @@
 :root{
-    --tmavaModra: #16213C;
-    --svetlaModra: #8ECAE6;
-    --pismoModra: #2D4275;
-    --Orange: #F5841F;
-    --tmavaOrange: #ED834E;
-    --svetlaOrange: #FF7917;
-    --Hneda: #340E0E;
     --Cerna: #000000;
-    --Bila: #FFFFFF;
-    --Seda: #D9D9D9;
-    --svetlaSeda: #EFEFEF;
-    --Sediva: #E7E7E7;
-    --svetlaSediva: #F5F5F5;
 }
 
 .hamburger {
@@ -29,8 +17,7 @@
     position: absolute;
     height: 9px;
     width: 100%;
-    background: #000000;
-    /*border-radius: 4.5px;*/
+    background: var(--Cerna);
     left: 0;
 }
 
@@ -64,7 +51,6 @@
 
     .hamburger.active span:nth-child(1){
         transform: translateY(18px) rotate(45deg);
-        /*transform-origin: left top;*/
     }
 
     .hamburger.active span:nth-child(2){
@@ -75,6 +61,5 @@
 
     .hamburger.active span:nth-child(3){
         transform: translateY(-18px) rotate(-45deg);
-        /*transform-origin: bottom left;*/
     }
 }
