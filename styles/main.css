@@ -78,6 +78,11 @@ h1, h2, h3{
 
 .drobenka a{
     color: var(--Cerna);
+    padding: 1px;
+}
+
+.drobenka img{
+    padding-bottom: 5px;
 }
 
 .drobenka__span{
@@ -231,13 +236,13 @@ h1, h2, h3{
 .sec__vyhody--blocs{
     display: flex;
     flex-wrap: wrap;
-    justify-content: center;
+    justify-content: space-around;
 }
 
 .vyhody__blocs--item{
     background-color: var(--Bila);
     border-radius: 1em;
-    width: 250px;
+    width: 225px;
     margin: 10px;
     padding: 10px;
 }
@@ -245,7 +250,7 @@ h1, h2, h3{
 .sec__vyhody--text{
     color: var(--tmavaModra)
 }
-
+/*
 .circles{
     display: flex;
     gap: 5px;
@@ -265,6 +270,70 @@ h1, h2, h3{
     border-radius: 6px;
     border: 2px solid var(--tmavaModra);
 }
+
+/*CAROUSEL*/
+
+*::-webkit-scrollbar {
+    width: 0;
+  }
+  
+  .carousel__viewport {
+    display: flex;
+    overflow-x: scroll;
+    scroll-behavior: smooth;
+    /*scroll-snap-type: x mandatory;*/
+    /*z-index: 1;*/
+  }
+  
+  .carousel__slide {
+    position: relative;
+    flex: 0 0 100%;
+    width: 100%;
+  }
+
+  /*TE4KY*/
+
+  .carousel__navigation {
+    display: flex;
+    justify-content: center;
+  }
+  
+  .carousel__navigation--item {
+    display: inline-block;
+  }
+
+  .carousel__navigation--button{
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    background-color: var(--tmavaModra);
+    /*background-clip: content-box;*/
+    border-radius: 50%;
+    cursor: pointer;
+  }
+/*
+  .carousel__navigation--button{
+    display: inline-block;
+    width: 15px;
+    height: 15px;
+    background-color: inherit;
+    /*background-clip: content-box;*/
+    /*border-radius: 50%;
+    border: 3px solid var(--tmavaModra);
+    
+  }
+*/
+
+.carousel__navigation--button:first-child:checked /*~ .carousel__navigation--button:nth-of-type(2) */{
+    display: inline-block;
+    width: 15px;
+    height: 15px;
+    background-color: inherit;
+    /*background-clip: content-box;*/
+    border-radius: 50%;
+    border: 3px solid var(--tmavaModra);
+}
+
 
 .pribeh__block{
     display: flex;
@@ -286,6 +355,7 @@ h1, h2, h3{
 .pribeh__knihy{
     display: flex;
     justify-content: center;
+    margin-bottom: 30px;
 }
 
 .o-nas__list{
@@ -317,7 +387,7 @@ h1, h2, h3{
     display: flex;
     justify-content: center;
     flex-direction: column;
-    padding: 60px 0;
+    padding: 40px 0;
 }
 
 .sec__aktuality--modul, .sec__aktuality--sleva{
@@ -379,6 +449,10 @@ h1, h2, h3{
     transform: scale(1.09);
 }
 
+.procesy__item:hover h3{
+    color: var(--pismoModra);
+}
+
 .funkce__pozadi {
     background-color: var(--Sediva);
     border-radius: 40px;
@@ -398,8 +472,13 @@ h1, h2, h3{
     gap: 20px;
 }
 
+.Play:hover{
+    transform: translateY(-10px) scale(1.09);
+    transition: 300ms;
+}
+
 .funkce__dotazy{
-    margin: 3em;
+    margin: 50px 0;
 }
 
 .funkce__dotazy{
@@ -461,6 +540,12 @@ h1, h2, h3{
     flex-wrap: wrap;
 }
 
+.kontakt__personal--text a{
+    display: block;
+    color: var(--Cerna);
+    margin-bottom: 1em;
+}
+
 /*FOOTER*/
 
 footer{
@@ -477,6 +562,7 @@ footer{
 
 .footer__item{
     text-align: center;
+    padding: 10px;
 }
 
 .footer__item a {
@@ -491,6 +577,7 @@ footer{
     display: flex;
     flex-direction: column;
     text-align: center;
+    padding: 10px;
     
 }
 
@@ -506,11 +593,7 @@ footer{
 .footer__underline--text{
     display: flex;
     justify-content: space-around;
-}
-
-.footer__underline--text{
-    display: flex;
-    justify-content: space-around;
+    align-items: center;
 }
 
 .footer__underline--line{
@@ -536,13 +619,22 @@ footer{
 }
 
 .footer__kontakt a {
+    display: flex;
+    justify-content: flex-start;
     margin: 0.5em 0;
+    gap: 10px;
 }
 
 .footer__a{
     display: block;
     color: var(--svetlaModra);
     margin: 1em 0;
+}
+
+.footer__link{
+    display: flex;
+    justify-content: left;
+    gap: 10px;
 }
 
 /*MEDIAQ*/
@@ -669,8 +761,6 @@ footer{
     }
 
     .sec__vyhody--blocs{
-        display: flex;
-        justify-content: space-around;
         margin: auto 150px auto 150px;
     }
 
@@ -710,7 +800,7 @@ footer{
     }
 
     .funkce__dotazy{
-        margin: auto 150px auto 150px;
+        margin: 50px 150px 50px 150px;
     }
 
 /*Q-KONTAKT*/
