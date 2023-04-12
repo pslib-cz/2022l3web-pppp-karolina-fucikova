@@ -164,7 +164,8 @@ h1, h2, h3{
     display: block;
     text-align: center;
     border-bottom: 2px solid var(--tmavaModra);
-    padding: 0.5em 1em;
+    padding: 0.5em 0;
+    width: 100%;
 }
 
 /*HOMEPAGE*/
@@ -215,16 +216,27 @@ h1, h2, h3{
     border: 1px solid var(--svetlaSeda);
 }
 
+.sec1__sponzori--block{
+    display: flex;
+    justify-content: space-around;
+}
+
 .sec1__sponzor{
     display: flex;
     justify-content: center;
+    flex-wrap: wrap;
     margin: 2em 0;
 }
 
 .img-sponzor{
-    object-fit: cover;
-    max-width: 700px;
+    object-fit: contain;
+    max-width: 250px;
     margin: 1em;
+}
+
+.img-sponzor:hover{
+    transform: scale(1.1);
+    transition: 0.5s;
 }
 
 .sec__vyhody{
@@ -355,7 +367,7 @@ h1, h2, h3{
     display: flex;
     justify-content: center;
     flex-direction: column;
-    padding: 3.5em 0;
+    padding-bottom: 3.5em;
 }
 
 .sec__aktuality--modul, .sec__aktuality--sleva{
@@ -665,7 +677,7 @@ footer{
         align-items: center;
         margin: 1em;
         justify-content: space-between;
-        margin: auto 10em auto 10em;
+        margin: 2em 10em 2em 10em;
     }
 
     .navbar{
@@ -702,6 +714,7 @@ footer{
         padding: 0.4em;
         border: none;
         justify-content: space-between;
+        width: auto;
     }
 
     .nav-item:hover{
@@ -829,7 +842,7 @@ footer{
 
     .footer__item--underline{
         display: flex;
-        justify-content: space-around;
+        justify-content: space-between;
         margin: auto 10em auto 10em;
     }
 
@@ -850,7 +863,6 @@ footer{
         margin: 2em;
     }
     .footer__line{
-        border: 1px solid var(--svetlaModra);
         width: 100%;
         margin: auto 10em auto 10em;
     }
