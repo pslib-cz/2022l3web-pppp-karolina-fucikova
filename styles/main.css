@@ -146,6 +146,7 @@ h1, h2, h3{
 .navbar__logoipsum, .navbar__logo{
     display: flex;
     align-items: center;
+    flex-wrap: nowrap;
 }
 
 .telefon, .posta, .header__profile{
@@ -338,6 +339,10 @@ h1, h2, h3{
     margin-bottom: 3em;
 }
 
+.img-knihy{
+    margin: 1em;
+}
+
 .o-nas__list{
     display: flex;
     justify-content: center;
@@ -405,9 +410,15 @@ h1, h2, h3{
     padding: 0 1em 1em;
 }
 
+.funkce__sec2{
+    display: flex;
+    justify-content: center;
+}
+
 .funkce__grid{
     display: grid;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: 1fr;
+    justify-content: center;
     padding: 1.5em;
     gap: 20px;
     margin: 1em;
@@ -462,10 +473,12 @@ h1, h2, h3{
     visibility: visible;
 }
 
-
 .funkce__pozadi {
+    display: grid;
+    justify-content: center;
     background-color: var(--Sediva);
     border-radius: 40px;
+    width: fit-content;
 }
 
 .funkce__uvod{
@@ -488,10 +501,7 @@ h1, h2, h3{
 }
 
 .funkce__dotazy{
-    margin: 5em 0;
-}
-
-.funkce__dotazy{
+    margin: 5em 1em;
     text-align: center;
 }
 
@@ -504,8 +514,7 @@ h1, h2, h3{
 
 .kontakt__pozadi{
     background-color: #e7e7e762;
-    border-radius: 30px;
-    margin-bottom: 3em;
+    margin: 3em 0 3em 0;
 }
 
 .kontakt__sec1 {
@@ -653,14 +662,6 @@ footer{
 @media screen and (min-width: 768px){
 /*Q-HEADER*/
 
-    .header__kontakt{
-        margin-left: 10em;
-    }
-
-    .header__profile{
-        margin-right: 10em;
-    }
-
     .header__inline p {
         visibility: visible;
         position: relative;
@@ -676,9 +677,8 @@ footer{
     .header__navigace{
         display: flex;
         align-items: center;
-        margin: 1em;
+        margin: 2em 1em;
         justify-content: space-between;
-        margin: 2em 10em 2em 10em;
     }
 
     .navbar{
@@ -730,7 +730,6 @@ footer{
         flex-wrap: nowrap;
         flex-direction: row;
         justify-content: space-around;
-        margin: auto 10em auto 10em;
     }
 
     .sec1__check--block{
@@ -754,7 +753,6 @@ footer{
     .sec__vyhody{
         display: flex;
         justify-content: space-around;
-        margin: auto 10em auto 10em;
     }
 
     .vyhody__item{
@@ -772,15 +770,10 @@ footer{
         width: 40em;
     }
 
-    .sec__vyhody--blocs{
-        margin: auto 10em auto 10em;
-    }
-
     .pribeh__block{
         display: flex;
         flex-direction: row;
         justify-content: center;
-        margin: auto 10em auto 10em;
     }
 
     .pribeh__item{
@@ -789,38 +782,21 @@ footer{
         justify-content: center;
     }
 
-    .o-nas__block{
-        margin: auto 10em auto 10em;
-    }
-
-    .aktuality__block{
-        margin: auto 10em auto 10em;
-    }
-
 /*Q-FUNKCE*/
-
-    .funkce__sec1{
-        margin: auto 10em auto 10em;
-    }
 
     .funkce__grid{
         display: grid;
-        grid-template-columns: 1fr 1fr 1fr 1fr;
-        margin: auto 10em auto 10em;
+        grid-template-columns: 1fr 1fr;
     }
 
     .funkce__dotazy{
-        margin: 4em 10em 4em 10em;
+        margin: 4em 2em;
     }
 
 /*Q-KONTAKT*/
 
-    .kontakt__sec1, .kontakt__sec2{
-        margin: auto 10em auto 10em;
-    }
-
     .kontakt__sec3{
-        margin: auto 10em 3em 10em;
+        margin: auto auto 3em auto;
     }
 
     .kontakt__sec2{
@@ -839,12 +815,16 @@ footer{
         max-height: 350px;
     }
 
+    .kontakt__pozadi{
+        border-radius: 30px;
+    }
+
 /*Q-FOOTER*/
 
     .footer__item--underline{
         display: flex;
         justify-content: space-between;
-        margin: auto 10em auto 10em;
+        margin: 2em;
     }
 
     .footer__underline--text{
@@ -865,9 +845,87 @@ footer{
     }
     .footer__line{
         width: 100%;
+    }
+}
+
+/*FUNKCE - GRID - TEBLET*/
+
+@media screen and (min-width: 961px){
+
+    .header__kontakt{
+        margin-left: 10em;
+    }
+
+    .header__profile{
+        margin-right: 10em;
+    }
+
+    .header__navigace{
+        margin: 2em 10em 2em 10em;
+    }
+
+    .section1{
+        margin: auto 10em auto 10em;
+    }
+
+    .sec__vyhody{
+        margin: auto 10em auto 10em;
+    }
+
+    .sec__vyhody--blocs{
+        margin: auto 10em auto 10em;
+    }
+
+    .pribeh__block{
+        margin: auto 10em auto 10em;
+    }
+
+    .o-nas__block{
+        margin: auto 10em auto 10em;
+    }
+
+    .aktuality__block{
+        margin: auto 10em auto 10em;
+    }
+
+    .funkce__sec1{
+        margin: auto 10em auto 10em;
+    }
+
+    .funkce__grid{
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        margin: auto 10em auto 10em;
+    }
+
+    .funkce__dotazy{
+        margin: 4em 10em 4em 10em;
+    }
+    
+    .kontakt__sec1, .kontakt__sec2{
+        margin: auto 10em auto 10em;
+    }
+
+    .kontakt__sec3{
+        margin: auto 10em 3em 10em;
+    }
+
+    .footer__item--underline{
+        margin: auto 10em auto 10em;
+    }
+
+    .footer__line{
         margin: auto 10em auto 10em;
     }
     .footer__block{
             margin: auto 10em auto 10em;
         }
+}
+
+@media screen and (min-width: 1281px){
+
+    .funkce__grid{
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+    }
 }
