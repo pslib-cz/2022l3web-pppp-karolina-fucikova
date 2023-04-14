@@ -129,11 +129,11 @@ h1, h2, h3{
 /*NAVIGACE*/
 
 .navbar__logo{
-    width: 185px;
-    color: var(--Hneda);
-    font-size: 28px;
-    font-weight: bold;
-    flex-wrap: nowrap;
+    max-width: 185px;
+}
+
+.header__logo{
+    padding-top: 0.2em;
 }
 
 .nav-link{
@@ -141,12 +141,6 @@ h1, h2, h3{
     font-size: 22px;
     font-weight: bold;
     text-align: center;
-}
-
-.navbar__logoipsum, .navbar__logo{
-    display: flex;
-    align-items: center;
-    flex-wrap: nowrap;
 }
 
 .telefon, .posta, .header__profile{
@@ -584,6 +578,10 @@ footer{
     padding: 1em;
 }
 
+.footer__logo{
+    margin-bottom: 0.5em;
+}
+
 .footer__item a {
     color: var(--svetlaModra);
 }
@@ -597,7 +595,11 @@ footer{
     flex-direction: column;
     text-align: center;
     padding: 1em;
-    
+}
+
+.footer__item--bold{
+    display: block;
+    font-weight: bold;
 }
 
 .footer__menu--text{
@@ -696,12 +698,6 @@ footer{
         align-items: center;
         width: 100%;
         justify-content: space-between;
-        
-    }
-
-    .navbar__logo{
-        gap: 5px;
-        width: 190px;
     }
 
     .nav__border{
