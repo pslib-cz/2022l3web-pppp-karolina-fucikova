@@ -116,8 +116,7 @@ h1, h2, h3{
 }
 
 .header__inline p {
-    position: absolute;
-    visibility: hidden;
+    display: none;
 }
 
 .telefon, .posta, .header__profile, .header__kontakt{
@@ -670,8 +669,7 @@ footer{
 /*Q-HEADER*/
 
     .header__inline p {
-        visibility: visible;
-        position: relative;
+        display: inline;
         margin: 0;
     }
 
